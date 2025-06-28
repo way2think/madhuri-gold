@@ -1,0 +1,58 @@
+.section {
+  padding: 4rem;
+  position: relative;
+}
+
+.footer {
+  color: #161920;
+  background: linear-gradient(
+    180deg,
+    rgba(220, 220, 220, 1) 50%,
+    rgba(254, 254, 254, 1) 100%
+  );
+}
+
+/* .container {
+  margin-top: 50px;
+} */
+
+.diamond {
+  position: absolute;
+  left: 64px;
+  top: 112px;
+}
+
+.bangle {
+  position: absolute;
+  right: 64px;
+  top: 112px;
+}
+
+.bangle2 {
+  margin: auto;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerlogo {
+  max-width: 100%;
+}
+
+.calllogo {
+  max-width: 100%;
+}
+
+.link {
+  color: #161920;
+  font-size: 16px;
+}
+
+.Copyright {
+  text-align: center;
+  font-size: 16px;
+  color: #161920;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}

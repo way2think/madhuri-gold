@@ -10,7 +10,7 @@ import classes from "../layouts/NavHeader.module.css";
 
 function NavHeader() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className={`${classes.navbar} bg-body-tertiary`}>
       <Container>
         <Navbar.Brand href="#">
           <img src="madhurilogo.svg" alt="Logo"  className={`${classes.logo}`}  />
