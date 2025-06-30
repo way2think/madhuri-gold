@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Noto+Sans+Tamil:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "palatino-italic";
+  src: url("/public/fonts/palatinolinotype_italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "palatino-bold";
+  src: url("/public/fonts/palatinolinotype_bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bold;
+}
+@font-face {
+  font-family: "palatino-bolditalic";
+  src: url("/public/fonts/palatinolinotype_bolditalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bolditalic;
+}
+
+.Bannerheading1 {
+  margin-top: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #161920;
+}
+
+.Bannerheading2,
+.unleash,
+.Bannerheading3,
+.Bannerheading4 {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 1.2;
+  color: #161920;
+  background: radial-gradient(50% 249% at 50% 50%, #fca412 0%, #1a1402 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Specific styles for fonts */
+.Bannerheading2 {
+  font-family: "palatino-bold";
+  font-style: bold;
+}
+.unleash {
+  font-family: "palatino-italic";
+  font-style: italic;
+  margin-right: 10px;
+}
+.Bannerheading3,
+.Bannerheading4 {
+  font-family: "palatino-bolditalic";
+  font-size: 5rem;
+}
+
+.ring {
+  max-width: 50%;
+}
+
+.arrow {
+  margin-left: 15px;
+  max-width: 5%;
+}
+
+.findstore {
+  background-image: url("/assets/images/buttonback.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  margin-top: 40px;
+  border-radius: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* ----------- RESPONSIVE BREAKPOINTS ----------- */
+
+/* Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .Bannerheading1 {
+    font-size: 12px;
+    margin-top: 2rem;
+  }
+
+  .Bannerheading2,
+  .unleash,
+  .Bannerheading3,
+  .Bannerheading4 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .ring {
+    max-width: 20%;
+  }
+
+  .arrow {
+    max-width: 10%;
+    margin-left: 8px;
+  }
+
+  .findstore {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    border-radius: 30px;
+  }
+}
+
+/* Tablet (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .Bannerheading2,
+  .unleash,
+  .Bannerheading3,
+  .Bannerheading4 {
+    font-size: 3rem;
+  }
+
+  .ring {
+    max-width: 60%;
+  }
+
+  .arrow {
+    max-width: 8%;
+    margin-left: 12px;
+  }
+
+  .findstore {
+    padding: 9px 25px;
+    font-size: 1rem;
+  }
+}
+
+/* Laptop/Desktop (769px and up) */
+@media (min-width: 769px) {
+  .Bannerheading2,
+  .unleash {
+    font-size: 4rem;
+  }
+
+  .Bannerheading3,
+  .Bannerheading4 {
+    font-size: 5rem;
+  }
+
+  .ring {
+    max-width: 50%;
+  }
+
+  .arrow {
+    max-width: 5%;
+  }
+
+  .findstore {
+    padding: 10px 30px;
+    font-size: 1.1rem;
+  }
+}

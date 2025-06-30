@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "palatino-italic";
+  src: url("/public/fonts/palatinolinotype_italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "palatino-bold";
+  src: url("/public/fonts/palatinolinotype_bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bold;
+}
+@font-face {
+  font-family: "palatino-bolditalic";
+  src: url("/public/fonts/palatinolinotype_bolditalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bolditalic;
+}
+
+.aboutUsHeading {
+  font-size: 3rem;
+  color: #161920;
+  font-family: "palatino-bold";
+  font-style: bold;
+  text-align: left;
+  margin: 0rem;
+}
+
+.aboutUsSubheading {
+  font-size: 2.5rem;
+  color: #bb7d1c;
+  font-family: "palatino-italic";
+  font-style: italic;
+  text-align: left;
+}
+
+.aboutUsDescription {
+  font-size: 1.2rem;
+  color: #161920;
+  font-family: "palatino-italic";
+  text-align: left;
+}
+
+.actressImagesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actressImage1 {
+  max-width: 40%;
+}
+.actressImage2 {
+  max-width: 36%;
+  margin-right: 70px;
+}
