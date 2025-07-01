@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "palatino-italic";
+  src: url("/public/fonts/palatinolinotype_italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "palatino-bold";
+  src: url("/public/fonts/palatinolinotype_bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bold;
+}
+@font-face {
+  font-family: "palatino-bolditalic";
+  src: url("/public/fonts/palatinolinotype_bolditalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bolditalic;
+}
+
+.categoryItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* padding: 1rem; */
+}
+
+/* Base styles for categoryTitle (mobile first) */
+.categoryTitle {
+  font-family: "palatino-italic";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px; /* Mobile size */
+}
+
+/* Tablet (≥600px) */
+@media (min-width: 600px) {
+  .categoryTitle {
+    font-size: 24px;
+  }
+}
+
+/* Laptop/Desktop (≥992px) */
+@media (min-width: 992px) {
+  .categoryTitle {
+    font-size: 28px;
+  }
+
+  .categoryItem {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+/* Large Screens (≥1200px) */
+@media (min-width: 1200px) {
+  .categoryTitle {
+    font-size: 30px;
+  }
+}

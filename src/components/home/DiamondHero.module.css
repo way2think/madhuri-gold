@@ -1,0 +1,75 @@
+.heroSection {
+  background-color: #fff;
+  padding: 4rem 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.leftBox {
+  text-align: center;
+  text-align: start;
+}
+
+.rightBox {
+  text-align: center;
+  text-align: start;
+}
+
+.description {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.findStoreText {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.goldText {
+  color: #d5a755;
+}
+
+.storeButton {
+  background-color: #d5a755;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.arrow {
+  font-size: 1rem;
+}
+
+.heroText {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #161920;
+  margin-bottom: 1.5rem;
+}
+
+.italic {
+  font-style: italic;
+  color: #7a5b2d;
+}
+
+.goldItalic {
+  font-style: italic;
+  color: #b68e44;
+}
+
+.knowMoreLink {
+  font-size: 0.9rem;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.knowMoreLink:hover {
+  color: #d5a755;
+}

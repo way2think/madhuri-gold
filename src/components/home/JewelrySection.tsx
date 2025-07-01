@@ -7,12 +7,14 @@ import classes from "./JewelrySection.module.css"; // Assuming you have a CSS mo
 
 const JewelrySection = () => {
   return (
-    <Container className="py-5">
+    <Container className="py-5 position-relative">
       <Row className="gy-4">
         {/* Left Column */}
         <Col xs={12} md={4}>
-          <div className="bg-white p-4 rounded shadow-sm h-100">
-            <div className="d-flex align-items-center gap-2 mb-3">
+          <div
+            className={`bg-white p-4 rounded shadow-sm h-100 border ${classes.firstColumn}`}
+          >
+            <div className="d-flex align-items-center gap-2">
               <Image
                 src="/assets/images/mask1.svg"
                 alt="Gold 1"
@@ -28,11 +30,10 @@ const JewelrySection = () => {
                 className="rounded-circle"
               />
             </div>
-            <h5 className="text-dark fw-semibold">
-              Gold <span className="fst-italic text-warning">saving</span>{" "}
-              Scheme
+            <h5 className={` ${classes.textTitle}`}>
+              Gold <span className={` ${classes.saving}`}>saving</span> Scheme
             </h5>
-            <p className={`${classes.textContent} text-muted mt-2 small`}>
+            <p className={`${classes.textContent} `}>
               Best Golden Eleven Flexi is created to help you buy jewellery that
               you always wanted to. Our Scheme offers you the option of buying
               gold jewellery, diamond jewellery, platinum jewellery, silver
@@ -41,7 +42,7 @@ const JewelrySection = () => {
             </p>
             <Button
               variant="link"
-              className="p-0 text-decoration-none text-dark d-flex align-items-center gap-1"
+              className={`text-decoration-none text-dark d-flex align-items-center gap-1 ${classes.buttonLink}`}
             >
               Know more <ArrowRight size={16} />
             </Button>
@@ -50,48 +51,68 @@ const JewelrySection = () => {
 
         {/* Center Column */}
         <Col xs={12} md={4}>
-          <div className="position-relative bg-light rounded shadow-sm text-center d-flex flex-column align-items-center justify-end py-4 h-100">
+          <div
+            className={`position-relative bg-light rounded shadow-sm text-center d-flex flex-column align-items-center justify-end pt-4 h-100 ${classes.centerColumn}`}
+          >
             <Button
               variant="link"
               className="position-absolute top-0 start-0 m-3 text-dark p-0"
             >
-              <PlayCircle size={36} />
+              <Image
+                src="/assets/images/Play.svg"
+                alt="Model"
+                width={50}
+                height={50}
+              />
             </Button>
             <Image
-              src="/model.png"
+              src="/assets/images/pexels-guru.svg"
               alt="Model"
               width={200}
-              height={300}
+              height={200}
               className="img-fluid"
             />
-            <p className="small mt-3 text-muted">24K Gold Plated</p>
+            <p className={`${classes.gold}`}>
+              24K Gold <br />
+              Plated
+            </p>
           </div>
         </Col>
 
         {/* Right Column */}
         <Col xs={12} md={4}>
-          <div className="bg-white p-4 rounded shadow-sm h-100 text-center d-flex flex-column align-items-center justify-center">
-            <h6 className="fw-semibold text-dark mb-3">
-              Handpicked <br />
-              Designer Jewellery
-            </h6>
+          <div
+            className={`bg-white p-4 rounded shadow-sm h-100 text-left d-flex flex-column align-items-start justify-content-center ${classes.ThirdColumn}`}
+          >
+            <div className="d-flex ">
+              <h6 className={`mb-3 ${classes.thirdTitle}`}>
+                Handpicked <br />
+                Designer Jewellery
+              </h6>
+              <a href="">
+                {" "}
+                <Image
+                  src="/assets/images/arrow_outward.svg"
+                  alt="Gold Ring"
+                  width={50}
+                  height={50}
+                  objectFit="contain"
+                  style={{ marginLeft: 10 }}
+                />
+              </a>
+            </div>
             <div
               className="position-relative"
-              style={{ width: 96, height: 96 }}
+              style={{ width: 200, height: 200, margin: "auto" }}
             >
               <Image
-                src="/gold-ring.png"
+                src="/assets/images/bangle.svg"
                 alt="Gold Ring"
-                layout="fill"
+                width={200}
+                height={200}
                 objectFit="contain"
               />
             </div>
-            <Button
-              variant="link"
-              className="p-0 mt-3 text-decoration-none text-dark d-flex align-items-center gap-1"
-            >
-              Explore <ArrowRight size={16} />
-            </Button>
           </div>
         </Col>
       </Row>

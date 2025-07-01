@@ -1,0 +1,85 @@
+.sectionTitle {
+  font-family: "Palatino Linotype", serif;
+  font-style: italic;
+  font-size: 28px;
+  color: #161920;
+}
+
+.viewButton {
+  font-size: 12px;
+  font-weight: 500;
+  color: #161920;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cardTitle {
+  margin-top: 12px;
+  font-family: "Palatino Linotype", serif;
+  font-size: 16px;
+  color: #161920;
+}
+
+.custom-pagination {
+  display: flex !important;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: #5c3a1a;
+  opacity: 0.4;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.navBtn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #5c3a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navBtn:hover {
+  background-color: #5c3a1a;
+  color: white;
+}
+
+.customBullet {
+  width: 12px;
+  height: 12px;
+  background-color: #754c24; /* Brown */
+  transform: rotate(45deg);
+  border-radius: 2px;
+  display: inline-block;
+  margin: 0 6px;
+  transition: background-color 0.3s;
+
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000 !important; /* Black */
+}
