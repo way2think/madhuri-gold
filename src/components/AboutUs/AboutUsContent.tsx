@@ -2,7 +2,7 @@
 "use client";
 
 import React from "react";
-import classes from "./AboutUsContent.module.css"; // Assuming you have a CSS module for styles
+import classes from "./AboutUsContent.module.css";
 
 const AboutUsContent = () => {
   return (
