@@ -8,7 +8,7 @@ const DiamondHero = () => {
   return (
     <section className={classes.heroSection}>
       <Container>
-        <Row className="align-items-center">
+        <Row className="align-items-center" style={{ position: "relative" }}>
           {/* Left Column */}
           <Col md={3} className={classes.leftBox}>
             <Image
@@ -26,14 +26,12 @@ const DiamondHero = () => {
               <br />
               For loved one’s
             </div>
-            <Button className={classes.storeButton}>
-              Find Store <span className={classes.arrow}>↗</span>
-            </Button>
+            <Button className={classes.storeButton}>Find Store</Button>
           </Col>
 
           {/* Center Column */}
           <Col md={6} className="text-center">
-            <h2 className={classes.heroText}>
+            {/* <h2 className={classes.heroText}>
               Sparkle <span className={classes.goldText}>endlessly</span> with
               <br />
               <span className={classes.italic}>exclusive </span>
@@ -41,38 +39,53 @@ const DiamondHero = () => {
                 <Image
                   src="/assets/images/diamond-ring-removebg-preview 1.svg"
                   alt="Jewellery Model"
-                  width={50}
-                  height={50}
-                  className="img-fluid mt-3"
+                  width={100}
+                  height={100}
                 />{" "}
                 diamond
               </span>{" "}
               designs
-            </h2>
+            </h2> */}
+            <Image
+              src="/assets/images/spark.svg"
+              alt="Jewellery Model"
+              width={500}
+              height={400}
+              className={`img-fluid ${classes.sparktext}`}
+            />
             <Image
               src="/assets/images/girls gold.svg"
               alt="Jewellery Model"
               width={350}
-              height={450}
-              className="img-fluid mt-3"
+              height={400}
             />
           </Col>
 
           {/* Right Column */}
           <Col md={3} className={classes.rightBox}>
-            <h5 className="mb-3">Necklace Set</h5>
-            <Image
-              src="/assets/images/diamond necklac.svg"
-              alt="Necklace Set"
-              width={200}
-              height={200}
-              className="mb-2"
-            />
-            <p>
-              <a href="#" className={classes.knowMoreLink}>
-                Know more →
-              </a>
-            </p>
+            <div className="d-flex flex-column align-items-start justify-content-start">
+              <Image
+                src="/assets/images/star.svg"
+                alt="Necklace Set"
+                width={150}
+                height={150}
+                className="mb-2"
+              />
+
+              <h5 className="mb-3">Necklace Set</h5>
+              <Image
+                src="/assets/images/diamond necklac.svg"
+                alt="Necklace Set"
+                width={250}
+                height={300}
+                className="mb-2"
+              />
+              <p className="mb-0">
+                <a href="#" className={`${classes.knowMoreLink} `}>
+                  Know more →
+                </a>
+              </p>
+            </div>
           </Col>
         </Row>
       </Container>
