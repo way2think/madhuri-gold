@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { ArrowRight, PlayCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import classes from "./JewelrySection.module.css"; // Assuming you have a CSS module for styles
 
 const JewelrySection = () => {

@@ -1,8 +1,6 @@
-// components/AboutUsContent.tsx
 "use client";
 
-import React from "react";
-import classes from "./AboutUsContent.module.css";
+// import classes from "./AboutUsContent.module.css";
 
 const AboutUsContent = () => {
   return (
@@ -12,15 +10,16 @@ const AboutUsContent = () => {
         <span className="italic text-yellow-600">Legacy and Trust</span>
       </h2>
       <p className="mb-4 text-sm md:text-base leading-relaxed">
-        Our story began in 1984 when T. Sudhakar founded "Madhuri Silver
-        Palace". Taken the legacy from T. Ramanaiah (Prop: Ramana Jewelers).
-        After the death of Sri. Sudhakar his only son made necessary expansion
-        of its retail outlet, Madhuri Silver Palace converted into a "Madhuri
-        Jewellery House" and then "New Madhuri Gold Palace A/c" for the growing
-        customer base. Now it turned as "Madhuri Gold" on May 2nd, 2019. A
-        bigger showroom in Srikalahasti town to give a great shopping experience
-        to customers. We are proud to be a part of every family gold investment
-        with Madhuri Gold Saving Schemes in Srikalahasti.
+        Our story began in 1984 when T. Sudhakar founded &quot;Madhuri Silver
+        Palace&quot;. Taken the legacy from T. Ramanaiah (Prop: Ramana
+        Jewelers). After the death of Sri. Sudhakar his only son made necessary
+        expansion of its retail outlet, Madhuri Silver Palace converted into a
+        &quot;Madhuri Jewellery House&quot; and then &quot;New Madhuri Gold
+        Palace A/c&quot; for the growing customer base. Now it turned as
+        &quot;Madhuri Gold&quot; on May 2nd, 2019. A bigger showroom in
+        Srikalahasti town to give a great shopping experience to customers. We
+        are proud to be a part of every family gold investment with Madhuri Gold
+        Saving Schemes in Srikalahasti.
       </p>
       <p className="mb-4 text-sm md:text-base leading-relaxed">
         Our unique collections make us different from other jewellery stores,
@@ -35,7 +34,7 @@ const AboutUsContent = () => {
       <p className="text-sm md:text-base">
         <strong>Our Mission:</strong>{" "}
         <span className="text-yellow-600 italic">
-          "Madhuri Gold" Want to become a first choice
+          &quot;Madhuri Gold&quot; Want to become a first choice
         </span>{" "}
         to every household for Gold investments, Good Designs.
       </p>

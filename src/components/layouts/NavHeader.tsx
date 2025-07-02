@@ -1,11 +1,8 @@
 "use client";
-import Image from "next/image";
-import Button from "react-bootstrap/Button";
+
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import classes from "../layouts/NavHeader.module.css";
 
 function NavHeader() {
@@ -13,7 +10,7 @@ function NavHeader() {
     <Navbar expand="lg" className={`${classes.navbar} bg-body-tertiary`}>
       <Container>
         <Navbar.Brand href="#">
-          <img src="madhurilogo.svg" alt="Logo"  className={`${classes.logo}`}  />
+          <img src="madhurilogo.svg" alt="Logo" className={`${classes.logo}`} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -22,11 +19,21 @@ function NavHeader() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#" className={classes.navItem}>Home</Nav.Link>
-            <Nav.Link href="#" className={classes.navItem}>Collections</Nav.Link>
-            <Nav.Link href="#" className={classes.navItem}>About Us</Nav.Link>
-            <Nav.Link href="#" className={classes.navItem}>Our Policies</Nav.Link>
-            <Nav.Link href="#" className={classes.navItemcontact}>Contact Us</Nav.Link>
+            <Nav.Link href="#" className={classes.navItem}>
+              Home
+            </Nav.Link>
+            <Nav.Link href="#" className={classes.navItem}>
+              Collections
+            </Nav.Link>
+            <Nav.Link href="#" className={classes.navItem}>
+              About Us
+            </Nav.Link>
+            <Nav.Link href="#" className={classes.navItem}>
+              Our Policies
+            </Nav.Link>
+            <Nav.Link href="#" className={classes.navItemcontact}>
+              Contact Us
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

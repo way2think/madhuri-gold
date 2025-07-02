@@ -1,5 +1,3 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import Banner from "@/components/home/Banner";
 import JewelrySection from "@/components/home/JewelrySection";
 import JewelryCategories from "@/components/home/JewelryCategories";
@@ -11,10 +9,10 @@ export default function Home() {
     <>
       <div>
         <Banner />
-        <JewelrySection/>
-        <JewelryCategories/>
-        <FeaturedJewellery/>
-        <DiamondHero/>
+        <JewelrySection />
+        <JewelryCategories />
+        <FeaturedJewellery />
+        <DiamondHero />
       </div>
     </>
   );

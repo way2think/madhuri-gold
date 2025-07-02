@@ -5,7 +5,7 @@ import { Container, Button } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
-import { ArrowRight, ArrowLeft } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import classes from "./FeaturedJewellery.module.css";
 
 import "swiper/css";
@@ -61,7 +61,6 @@ const FeaturedJewellery = () => {
         modules={[Navigation, Pagination]}
         slidesPerView={1}
         spaceBetween={30}
-        
         breakpoints={{
           768: { slidesPerView: 2 },
           992: { slidesPerView: 3 },
@@ -71,8 +70,10 @@ const FeaturedJewellery = () => {
           nextEl: ".custom-next",
           prevEl: ".custom-prev",
         }}
-       pagination={{ el: ".custom-pagination", clickable: true,
-        renderBullet: (_, className) =>
+        pagination={{
+          el: ".custom-pagination",
+          clickable: true,
+          renderBullet: (_, className) =>
             `<span class="${className} ${classes.customBullet}"></span>`,
         }}
       >
@@ -92,23 +93,31 @@ const FeaturedJewellery = () => {
       </Swiper>
 
       <div className="d-flex flex-column align-items-center mt-4">
-        <div className="custom-pagination" style={{ display: "flex", justifyContent: "center", gap: "6px", marginBottom: "8px" }} />
+        <div
+          className="custom-pagination"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "6px",
+            marginBottom: "8px",
+          }}
+        />
         <div className="d-flex gap-3  mt-2" style={{ marginLeft: "auto" }}>
           <div className={`custom-prev ${classes.navBtn}`}>
-           <Image
-                src="/assets/images/arrow_left.svg"
-                alt="Previous"
-                width={30}
-                height={30}
-              />
+            <Image
+              src="/assets/images/arrow_left.svg"
+              alt="Previous"
+              width={30}
+              height={30}
+            />
           </div>
           <div className={`custom-next ${classes.navBtn}`}>
-           <Image
-                src="/assets/images/arrow_right.svg"
-                alt="next"
-                width={30}
-                height={30}
-              />
+            <Image
+              src="/assets/images/arrow_right.svg"
+              alt="next"
+              width={30}
+              height={30}
+            />
           </div>
         </div>
       </div>

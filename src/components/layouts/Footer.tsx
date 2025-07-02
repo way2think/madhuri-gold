@@ -1,3 +1,4 @@
+import Link from "next/link";
 import classes from "./Footer.module.css";
 
 const Footer = () => {
@@ -19,11 +20,11 @@ const Footer = () => {
           />
           <div className="row mt-5">
             <div className="col-lg-3 mb-3">
-              <a
+              <Link
                 className="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"
                 href="/"
                 aria-label="Bootstrap"
-              ></a>
+              ></Link>
               <ul className="list-unstyled small">
                 <img
                   src="footerlogo.svg"

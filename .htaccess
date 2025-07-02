@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1️⃣ If requesting an existing file or directory, serve it
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # 2️⃣ If a clean URL matches an .html file, rewrite to that
+  RewriteRule ^(.*)/$ $1.html [L]
+  RewriteRule ^(.*)$   $1.html [L]
+
+  # 3️⃣ Fallback: everything else goes to index.html
+  RewriteRule ^.*$     /index.html [L]
+</IfModule>
