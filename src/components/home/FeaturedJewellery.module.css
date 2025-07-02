@@ -18,7 +18,7 @@
 .card {
   text-align: center;
   padding: 20px;
-  background: #fff;
+  background: #f1f1f1;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
@@ -77,7 +77,6 @@
   display: inline-block;
   margin: 0 6px;
   transition: background-color 0.3s;
-
 }
 
 .swiper-pagination-bullet-active {
