@@ -10,7 +10,9 @@ const AboutBanner = () => {
       <div className="row">
         <div className="col-md-4 col-lg-4">
           <Image
-            src="/assets/images/trisha.svg"
+            // src="/assets/images/gold-model.png"
+            // src="/assets/images/trisha.svg"
+            src="/assets/images/trisha.jpg"
             alt="Model 1"
             width={350}
             height={400}
@@ -50,12 +52,15 @@ const AboutBanner = () => {
           </div>
           <div className={classes.actressImagesContainer}>
             <img
-              src="/assets/images/actress2.svg"
+              src="/assets/images/diamond-model.jpg"
               alt="Model 2"
               className={`${classes.actressImage1} rounded-md object-cover`}
             />
+
             <img
-              src="/assets/images/actress3.svg"
+              src="/assets/images/silver-model.jpg"
+              // src="/assets/images/silver-model.png"
+              // src="/assets/images/actress3.svg"
               alt="Model 3"
               className={`${classes.actressImage2} rounded-md object-cover`}
             />
