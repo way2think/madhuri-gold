@@ -9,7 +9,7 @@ function NavHeader() {
   return (
     <Navbar expand="lg" className={`${classes.navbar} bg-body-tertiary`}>
       <Container>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
           <img src="madhurilogo.svg" alt="Logo" className={`${classes.logo}`} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -19,13 +19,13 @@ function NavHeader() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#" className={classes.navItem}>
+            <Nav.Link href="/" className={classes.navItem}>
               Home
             </Nav.Link>
             <Nav.Link href="#" className={classes.navItem}>
               Collections
             </Nav.Link>
-            <Nav.Link href="#" className={classes.navItem}>
+            <Nav.Link href="/about-us" className={classes.navItem}>
               About Us
             </Nav.Link>
             <Nav.Link href="#" className={classes.navItem}>
