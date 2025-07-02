@@ -11,22 +11,31 @@ const DiamondHero = () => {
         <Row className="align-items-center" style={{ position: "relative" }}>
           {/* Left Column */}
           <Col md={3} className={classes.leftBox}>
-            <Image
-              src="/assets/images/ringtheback.svg"
-              alt="Bracelet"
-              width={200}
-              height={200}
-            />
-            <p className={classes.description}>
-              Bridal diamond gold jewellery collection ranging from bracelet,
-              necklace set, rings, locket set, earrings and many more
-            </p>
+            <div className={classes.leftBoxContent}>
+              <Image
+                src="/assets/images/ringtheback.svg"
+                alt="Bracelet"
+                width={200}
+                height={200}
+              />
+              <p className={classes.description}>
+                Bridal diamond gold jewellery collection ranging from bracelet,
+                necklace set, rings, locket set, earrings and many more
+              </p>
+            </div>
             <div className={classes.findStoreText}>
               Find best <span className={classes.goldText}>Diamond</span>
               <br />
               For loved one’s
             </div>
-            <Button className={classes.storeButton}>Find Store</Button>
+            <div className="d-flex">
+              <Button className={classes.storeButton}>Find Store</Button>
+               <img
+              src="/assets/images/arrow_outward.svg"
+              alt="Banner Image"
+              className={classes.arrow}
+            />
+            </div>
           </Col>
 
           {/* Center Column */}

@@ -1,0 +1,195 @@
+/* Typography for headings */
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Noto+Sans+Tamil:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "palatino-italic";
+  src: url("/public/fonts/palatinolinotype_italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "palatino-bold";
+  src: url("/public/fonts/palatinolinotype_bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bold;
+}
+@font-face {
+  font-family: "palatino-bolditalic";
+  src: url("/public/fonts/palatinolinotype_bolditalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bolditalic;
+}
+.serif {
+  font-family: "palatino-italic";
+  font-weight: 400;
+  font-size: 2.5rem;
+  font-style: italic;
+  background: radial-gradient(50% 249% at 50% 50%, #fca412 0%, #1a1402 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+}
+
+.collectionImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.collectionringImage {
+  max-width: 35%;
+}
+
+.differently,
+.dare {
+  font-family: "palatino-bold";
+  font-size: 4rem;
+  color: #161920;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #161920;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.dazzle {
+  color: #d9904d;
+  font-style: italic;
+  font-family: "palatino-italic";
+  text-align: left;
+}
+
+/* Image utility */
+.img-fluid {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+/* Card styles */
+.card {
+  transition: transform 0.2s ease;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  border-color: #d9904d;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+  color: #222;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #595959;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1200px) {
+  .differently,
+  .dare {
+    font-size: 3.2rem;
+  }
+
+  .collectionringImage {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 992px) {
+  .serif {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .differently,
+  .dare {
+    font-size: 2.5rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .textContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .collectionImage {
+    height: 15rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .dazzle {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .serif {
+    font-size: 1.75rem;
+  }
+
+  .differently,
+  .dare {
+    font-size: 2rem;
+  }
+
+  .collectionImage {
+    height: 12rem;
+  }
+
+  .collectionringImage {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .serif {
+    font-size: 1.5rem;
+  }
+
+  .differently,
+  .dare {
+    font-size: 1.75rem;
+  }
+
+  .collectionImage {
+    height: 10rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+}

@@ -27,18 +27,40 @@
 
 .heroSection {
   background-color: #fff;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
   font-family: "Poppins", sans-serif;
 }
 
-.leftBox {
-  text-align: center;
+/* Flex layout for larger screens */
+@media (min-width: 768px) {
+  .heroSection {
+    padding: 5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* .leftBox,
+  .rightBox {
+    width: 48%;
+  } */
+}
+
+.leftBox,
+.rightBox {
   text-align: start;
 }
 
-.rightBox {
-  text-align: center;
-  text-align: start;
+/* Default spacing for small screens */
+.leftBoxContent {
+  margin-bottom: 2rem;
+}
+
+/* Increase margin for medium and above */
+@media (min-width: 768px) {
+  .leftBoxContent {
+    margin-bottom: 5rem;
+  }
 }
 
 .description {
@@ -51,6 +73,15 @@
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+/* Larger text for tablets and above */
+@media (min-width: 768px) {
+  .findStoreText {
+    font-size: 1.4rem;
+    margin-top: 3rem;
+  }
 }
 
 .goldText {
@@ -59,34 +90,61 @@
   font-style: italic;
 }
 
-.storeButton {
-  background-color: #d5a755;
-  border: none;
-  padding: 0.5rem 1.5rem;
-  border-radius: 50px;
-  font-size: 0.95rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.arrow {
-  font-size: 1rem;
-}
-
 .heroText {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 400;
   color: #161920;
   background: radial-gradient(50% 249% at 50% 50%, #fca412 0%, #1a1402 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "palatino-italic";
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
-.findStoreText {
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
+/* Scale up hero text on larger screens */
+@media (min-width: 768px) {
+  .heroText {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .heroText {
+    font-size: 4rem;
+  }
+}
+
+.storeButton {
+  background-image: url("/assets/images/buttonback.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Button size can increase slightly on large screens */
+@media (min-width: 992px) {
+  .storeButton {
+    font-size: 1.1rem;
+    padding: 12px 40px;
+  }
+}
+
+.arrow {
+  font-size: 1rem;
+  margin-left: 15px;
+  max-width: 15%;
 }
 
 .italic {

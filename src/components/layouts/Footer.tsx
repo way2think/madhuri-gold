@@ -3,7 +3,7 @@ import classes from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <section className={`${classes.section} mt-5`}>
+    <section className={`${classes.section} mt-2`}>
       <img src="diamond.svg" alt="Logo" className={`${classes.diamond}`} />
       <img src="bangle.svg" alt="Logo" className={`${classes.bangle}`} />
 
