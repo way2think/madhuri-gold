@@ -141,7 +141,7 @@ const Footer = () => {
                 </li> */}
                 <li className="mb-2">
                   <a
-                    href=""
+                    href="/terms-conditions"
                     target="_blank"
                     rel="noopener"
                     className={classes.link}
