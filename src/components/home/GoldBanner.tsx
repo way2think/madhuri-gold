@@ -2,7 +2,7 @@
 "use client";
 
 import { Container, Row, Col, Button } from "react-bootstrap";
-import Image from "next/image";
+// import Image from "next/image";
 import classes from "./GoldBanner.module.css";
 
 const GoldBanner = () => {
