@@ -43,7 +43,7 @@ function NavHeader() {
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link href="#" className={classes.navItemcontact}>
+              <Link href="/contact-us" className={classes.navItemcontact}>
                 Contact Us
               </Link>
             </Nav.Item>

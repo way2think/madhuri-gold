@@ -121,7 +121,7 @@ const Footer = () => {
               <ul className="list-unstyled">
                 <li className="mb-2">
                   <a
-                    href=""
+                    href="/privacy-policy"
                     target="_blank"
                     rel="noopener"
                     className={classes.link}
@@ -129,7 +129,7 @@ const Footer = () => {
                     Privacy Policy
                   </a>
                 </li>
-                <li className="mb-2">
+                {/* <li className="mb-2">
                   <a
                     href=""
                     target="_blank"
@@ -138,7 +138,7 @@ const Footer = () => {
                   >
                     Refund Policy
                   </a>
-                </li>
+                </li> */}
                 <li className="mb-2">
                   <a
                     href=""
@@ -151,7 +151,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-2">
                   <a
-                    href=""
+                    href="/delivery-shipping-policy"
                     target="_blank"
                     rel="noopener"
                     className={classes.link}
@@ -161,12 +161,12 @@ const Footer = () => {
                 </li>
                 <li className="mb-2">
                   <a
-                    href=""
+                    href="/cancellation-and-return-policy"
                     target="_blank"
                     rel="noopener"
                     className={classes.link}
                   >
-                    Cancelation and Return Policy
+                    Cancellation and Return Policy
                   </a>
                 </li>
               </ul>
@@ -175,7 +175,7 @@ const Footer = () => {
         </div>
         <p className={classes.Copyright}>
           Copyright © 2025 Madhuri Gold. All rights reserved! Design and
-          developed by Proppify solutions
+          developed by <strong>Proppify Solutions</strong>
         </p>
       </footer>
     </section>

@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Noto+Sans+Tamil:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .section {
   padding: 4rem;
   position: relative;
@@ -12,20 +20,20 @@
   );
 }
 
-/* .container {
-  margin-top: 50px;
-} */
-
-.diamond {
+.diamond,
+.bangle {
   position: absolute;
-  left: 64px;
   top: 112px;
+  width: 80px;
+}
+
+/* Position adjustments for larger screens */
+.diamond {
+  left: 64px;
 }
 
 .bangle {
-  position: absolute;
   right: 64px;
-  top: 112px;
 }
 
 .bangle2 {
@@ -36,12 +44,10 @@
   align-items: center;
 }
 
-.footerlogo {
-  max-width: 100%;
-}
-
+.footerlogo,
 .calllogo {
   max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -55,4 +61,76 @@
   color: #161920;
   padding-top: 10px;
   border-top: 1px solid #ccc;
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .diamond,
+  .bangle {
+    display: none; /* Hide absolute elements if they clutter on small screens */
+  }
+
+  .bangle2 {
+    max-width: 90%;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+
+  .Copyright {
+    font-size: 14px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .section {
+    padding: 3rem;
+  }
+
+  .diamond {
+    left: 32px;
+    width: 60px;
+  }
+
+  .bangle {
+    right: 32px;
+    width: 60px;
+  }
+
+  .bangle2 {
+    max-width: 70%;
+  }
+
+  .link {
+    font-size: 15px;
+  }
+}
+
+/* Large screens (laptops and desktops) */
+@media (min-width: 769px) {
+  .diamond {
+    left: 64px;
+    width: 200px;
+  }
+
+  .bangle {
+    right: 64px;
+    width: 200px;
+  }
+
+  .bangle2 {
+    max-width: 50%;
+  }
+
+  .link {
+    font-size: 16px;
+  }
 }
