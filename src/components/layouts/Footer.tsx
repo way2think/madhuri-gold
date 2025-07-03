@@ -120,14 +120,14 @@ const Footer = () => {
             <div className="col-lg-3 mb-3">
               <ul className="list-unstyled">
                 <li className="mb-2">
-                  <a
+                  <Link
                     href="/privacy-policy"
                     target="_blank"
                     rel="noopener"
                     className={classes.link}
                   >
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 {/* <li className="mb-2">
                   <a
@@ -140,34 +140,34 @@ const Footer = () => {
                   </a>
                 </li> */}
                 <li className="mb-2">
-                  <a
+                  <Link
                     href="/terms-conditions"
                     target="_blank"
                     rel="noopener"
                     className={classes.link}
                   >
                     Terms & Conditions
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a
+                  <Link
                     href="/delivery-shipping-policy"
                     target="_blank"
                     rel="noopener"
                     className={classes.link}
                   >
                     Delivery & Shipping Policy
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a
+                  <Link
                     href="/cancellation-and-return-policy"
                     target="_blank"
                     rel="noopener"
                     className={classes.link}
                   >
                     Cancellation and Return Policy
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

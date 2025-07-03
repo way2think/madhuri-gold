@@ -38,7 +38,7 @@ function NavHeader() {
               </Link>
             </Nav.Item>
             <Nav.Item>
-              <Link href="#" className={classes.navItem}>
+              <Link href="/privacy-policy" className={classes.navItem}>
                 Our Policies
               </Link>
             </Nav.Item>
