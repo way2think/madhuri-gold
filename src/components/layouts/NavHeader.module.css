@@ -19,3 +19,51 @@
   font-size: 16px;
   text-transform: uppercase;
 }
+
+.NavDropdown {
+  color: #161920;
+  font-size: 16px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+#basic-nav-dropdown {
+  padding: 0;
+}
+
+@media (min-width: 300px) {
+  .navItemcontact {
+    text-align: left;
+    margin-left: 0;
+  }
+  .navItemmobile {
+    margin-bottom: 10px;
+  }
+  .NavDropdown {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .navItemcontact {
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navItemcontact {
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .navItemcontact {
+    margin-left: 100px;
+  }
+}

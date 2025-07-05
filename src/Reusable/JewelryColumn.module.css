@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "palatino-italic";
+  src: url("/public/fonts/palatinolinotype_italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "palatino-bold";
+  src: url("/public/fonts/palatinolinotype_bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bold;
+}
+@font-face {
+  font-family: "palatino-bolditalic";
+  src: url("/public/fonts/palatinolinotype_bolditalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bolditalic;
+}
+
+.highlight {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: #161920;
+  background: radial-gradient(50% 249% at 50% 50%, #fca412 0%, #1a1402 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Adjust .highlight font size for tablets and larger */
+@media (min-width: 576px) {
+  .highlight {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .highlight {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .highlight {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .highlight {
+    font-size: 2.5rem;
+  }
+}
+
+.collectionImage {
+  height: inherit;
+}
+
+/* Subheading responsive */
+.subheading {
+  font-family: "palatino-italic";
+  font-weight: 400;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+@media (min-width: 300px) {
+  .subheading {
+    font-size: 2.2rem;
+  }
+  .starImage{
+    display: none !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .subheading {
+    font-size: 2.2rem;
+  }
+  .starImage{
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .subheading {
+    font-size: 2.5rem;
+  }
+   .starImage{
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .subheading {
+    font-size: 2.75rem;
+  }
+   .starImage{
+    display: block !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subheading {
+    font-size: 3rem;
+  }
+   .starImage{
+    display: block !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .subheading {
+    font-size: 3.5rem;
+  }
+   .starImage{
+    display: block !important;
+  }
+}
