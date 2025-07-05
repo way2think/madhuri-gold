@@ -28,7 +28,6 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
 }) => {
   return (
     <section className={classes.productDetail}>
-    
       <Container>
         <p className={classes.breadcrumb}>{breadcrumb}</p>
         <Row className="align-items-center">
@@ -36,7 +35,6 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
             <img src={image} alt={title} className={classes.productImage} />
           </Col>
           <Col md={6}>
-            
             <h2 className={classes.title}>{title}</h2>
             <h4 className={classes.price}>{price}</h4>
             <p className={classes.description}>{description}</p>

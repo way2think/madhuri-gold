@@ -14,14 +14,18 @@ interface Product {
 }
 
 interface JewelrySectionProps {
+  subheading?: string;
   products: Product[];
 }
 
-const JewelryColumn: React.FC<JewelrySectionProps> = ({ products }) => {
+const JewelryColumn: React.FC<JewelrySectionProps> = ({
+  products,
+  subheading,
+}) => {
   return (
     <Container fluid className="py-5 px-3 px-md-5">
       <Row className="g-4">
-        {/* <h4 className={classes.subheading}>{subheading}</h4> */}
+        <h4 className={classes.subheading}>{subheading}</h4>
         {products.map((item, idx) => (
           <Col key={idx} xs={6} md={3}>
             <Link href={item.link} className="text-decoration-none w-100">

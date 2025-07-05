@@ -14,17 +14,15 @@ interface Product {
 }
 
 interface JewelrySectionProps {
-  subheading: string;
   bannerImage: string;
-  products: Product[];
+
   bannerTextImage: string;
   bannerSecondTextImage?: string;
 }
 
 const JewelrySection: React.FC<JewelrySectionProps> = ({
-  subheading,
   bannerImage,
-  products,
+
   bannerTextImage,
   bannerSecondTextImage,
 }) => {
@@ -57,30 +55,6 @@ const JewelrySection: React.FC<JewelrySectionProps> = ({
             className={`mb-2 ${classes.starImage}`}
           />
         </Col>
-      </Row>
-
-      <Row className="g-4">
-        <h4 className={classes.subheading}>{subheading}</h4>
-        {products.map((item, idx) => (
-          <Col key={idx} xs={6} md={3}>
-            <Link href={item.link} className="text-decoration-none w-100">
-              <Card
-                className="border-0 shadow-sm h-100 text-center"
-                style={{ background: "#F1F1F1" }}
-              >
-                <Card.Img
-                  variant="top"
-                  src={item.image}
-                  className={`${classes.collectionImage} `}
-                />
-                <Card.Body>
-                  <Card.Title className="fw-semibold">{item.title}</Card.Title>
-                  <Card.Text className="text-muted">{item.price}</Card.Text>
-                </Card.Body>
-              </Card>
-            </Link>
-          </Col>
-        ))}
       </Row>
     </Container>
   );
