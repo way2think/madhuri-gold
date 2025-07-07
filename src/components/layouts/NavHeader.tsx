@@ -40,18 +40,37 @@ function NavHeader() {
               className={`${classes.NavDropdown} p-0`}
               style={{ padding: 0, color: "#000" }}
             >
-              <NavDropdown.Item href="/privacy-policy">
-                Privacy Policy
+              <NavDropdown.Item as="span">
+                <Link
+                  href="/privacy-policy"
+                  className={classes.navDropdownItem}
+                >
+                  Privacy Policy
+                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="/terms-and-conditions">
-                Terms & Conditions
+              <NavDropdown.Item as="span">
+                <Link
+                  href="/terms-and-conditions"
+                  className={classes.navDropdownItem}
+                >
+                  Terms & Conditions
+                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="/delivery-and-shipping-policy">
-                Delivery & Shipping Policy
+              <NavDropdown.Item as="span">
+                <Link
+                  href="/delivery-and-shipping-policy"
+                  className={classes.navDropdownItem}
+                >
+                  Delivery & Shipping Policy
+                </Link>
               </NavDropdown.Item>
-
-              <NavDropdown.Item href="/cancellation-and-return-policy">
-                Cancellation and Return Policy
+              <NavDropdown.Item as="span">
+                <Link
+                  href="/cancellation-and-return-policy"
+                  className={classes.navDropdownItem}
+                >
+                  Cancellation and Return Policy
+                </Link>
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Item className={classes.navItemmobile}>

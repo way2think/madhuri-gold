@@ -24,7 +24,11 @@ const JewelryColumn: React.FC<JewelrySectionProps> = ({
         {products.map((item, idx) => (
           <Col key={idx} xs={6} md={3}>
             <Link
-              href={`collections/${item.id}`}
+              href={
+                item.id.startsWith("collections/")
+                  ? `/${item.id}`
+                  : `/collections/${item.id}`
+              }
               className="text-decoration-none w-100"
             >
               <Card
