@@ -6,7 +6,6 @@ import DiamondHero from "@/components/home/DiamondHero";
 import Collections from "@/components/home/Collections";
 import GoldBanner from "@/components/home/GoldBanner";
 
-
 export default function Home() {
   return (
     <>
@@ -16,8 +15,8 @@ export default function Home() {
         <JewelryCategories />
         <FeaturedJewellery />
         <DiamondHero />
-        <Collections/>
-        <GoldBanner/>
+        <Collections />
+        <GoldBanner />
       </div>
     </>
   );

@@ -13,7 +13,7 @@ function NavHeader() {
       <Container>
         <Navbar.Brand as="span">
           <Link href="/" className={classes.logo} passHref>
-            <img src="madhurilogo.svg" alt="Logo" className={classes.logo} />
+            <img src="/madhurilogo.svg" alt="Logo" className={classes.logo} />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

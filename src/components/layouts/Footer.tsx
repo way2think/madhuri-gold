@@ -4,8 +4,8 @@ import classes from "./Footer.module.css";
 const Footer = () => {
   return (
     <section className={`${classes.section} mt-2`}>
-      <img src="diamond.svg" alt="Logo" className={`${classes.diamond}`} />
-      <img src="bangle.svg" alt="Logo" className={`${classes.bangle}`} />
+      <img src="/diamond.svg" alt="Logo" className={`${classes.diamond}`} />
+      <img src="/bangle.svg" alt="Logo" className={`${classes.bangle}`} />
 
       <footer
         className={`${classes.footer} bd-footer py-4 pt-md-5 mt-5  bg-body-tertiary`}
@@ -14,7 +14,7 @@ const Footer = () => {
           className={`${classes.container} container py-4 py-md-5  px-4 px-md-3 text-body-secondary`}
         >
           <img
-            src="footer heading.svg"
+            src="/footer heading.svg"
             alt="Logo"
             className={`${classes.bangle2}`}
           />
@@ -27,7 +27,7 @@ const Footer = () => {
               ></Link>
               <ul className="list-unstyled small">
                 <img
-                  src="footerlogo.svg"
+                  src="/footerlogo.svg"
                   alt="Logo"
                   className={`${classes.footerlogo}`}
                 />
@@ -37,7 +37,7 @@ const Footer = () => {
               <ul className="list-unstyled">
                 <li className="mb-2">
                   <img
-                    src="call.svg"
+                    src="/call.svg"
                     alt="Logo"
                     className={`${classes.calllogo} me-2`}
                   />
@@ -47,7 +47,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-2">
                   <img
-                    src="schedule.svg"
+                    src="/schedule.svg"
                     alt="Logo"
                     className={`${classes.calllogo} me-2`}
                   />
@@ -57,7 +57,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-2">
                   <img
-                    src="location_on.svg"
+                    src="/location_on.svg"
                     alt="Logo"
                     className={`${classes.calllogo} me-2`}
                   />
@@ -70,7 +70,7 @@ const Footer = () => {
               <div className="d-flex">
                 <a href="">
                   <img
-                    src="uil_facebook.svg"
+                    src="/uil_facebook.svg"
                     alt="Logo"
                     className={`${classes.calllogo} me-2`}
                   />
@@ -78,7 +78,7 @@ const Footer = () => {
 
                 <a href="">
                   <img
-                    src="Vector.svg "
+                    src="/Vector.svg "
                     alt="Logo"
                     className={`${classes.calllogo} me-2`}
                   />
@@ -86,7 +86,7 @@ const Footer = () => {
 
                 <a href="" target="_blank" rel="noopener">
                   <img
-                    src="Vector-1.svg"
+                    src="/Vector-1.svg"
                     alt="Logo"
                     className={`${classes.calllogo} me-2`}
                   />

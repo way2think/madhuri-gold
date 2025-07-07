@@ -11,43 +11,47 @@ import classes from "./FeaturedJewellery.module.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { featuredProducts } from "@/data/products";
+import { useRouter } from "next/navigation";
 
-const jewelleryItems = [
-  {
-    title: "Diamond Ring",
-    image: "/assets/images/diamond-ring-removebg.svg",
-  },
-  {
-    title: "The Gianna Ring",
-    image: "/assets/images/diamond-ring.svg",
-  },
-  {
-    title: "Gajalya Earrings",
-    image: "/assets/images/Carosuelimage.svg",
-  },
-  {
-    title: "Gold toned bangles",
-    image: "/assets/images/bangle.svg",
-  },
-  {
-    title: "Diamond Ring",
-    image: "/assets/images/diamond-ring-removebg.svg",
-  },
-  {
-    title: "The Gianna Ring",
-    image: "/assets/images/diamond-ring.svg",
-  },
-  {
-    title: "Gajalya Earrings",
-    image: "/assets/images/Carosuelimage.svg",
-  },
-  {
-    title: "Gold toned bangles",
-    image: "/assets/images/bangle.svg",
-  },
-];
+// const jewelleryItems = [
+//   {
+//     title: "Diamond Ring",
+//     image: "/assets/images/diamond-ring-removebg.svg",
+//   },
+//   {
+//     title: "The Gianna Ring",
+//     image: "/assets/images/diamond-ring.svg",
+//   },
+//   {
+//     title: "Gajalya Earrings",
+//     image: "/assets/images/Carosuelimage.svg",
+//   },
+//   {
+//     title: "Gold toned bangles",
+//     image: "/assets/images/bangle.svg",
+//   },
+//   {
+//     title: "Diamond Ring",
+//     image: "/assets/images/diamond-ring-removebg.svg",
+//   },
+//   {
+//     title: "The Gianna Ring",
+//     image: "/assets/images/diamond-ring.svg",
+//   },
+//   {
+//     title: "Gajalya Earrings",
+//     image: "/assets/images/Carosuelimage.svg",
+//   },
+//   {
+//     title: "Gold toned bangles",
+//     image: "/assets/images/bangle.svg",
+//   },
+// ];
 
 const FeaturedJewellery = () => {
+  const navigate = useRouter();
+
   return (
     <Container className="py-5">
       <div className="d-flex justify-content-between align-items-center mb-4">
@@ -77,9 +81,14 @@ const FeaturedJewellery = () => {
             `<span class="${className} ${classes.customBullet}"></span>`,
         }}
       >
-        {jewelleryItems.map((item, index) => (
+        {featuredProducts.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className={classes.card}>
+            <div
+              className={classes.card}
+              onClick={() => {
+                navigate.push(`/collections/${item.id}`);
+              }}
+            >
               <Image
                 src={item.image}
                 alt={item.title}

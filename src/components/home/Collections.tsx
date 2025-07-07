@@ -1,69 +1,77 @@
-// components/Collections.tsx
 "use client";
 
 import { Container, Row, Col, Card, Image } from "react-bootstrap";
 import classes from "./Collections.module.css"; // Assuming you have a CSS module for styles
+import { allProducts } from "@/data/products";
+import { formatRupees } from "@/util";
+import { useRouter } from "next/navigation";
 
-const items = [
-  {
-    name: "Snake Chain",
-    price: "₹5,000.00",
-    image: "/assets/images/silver-jain.svg",
-  },
-  {
-    name: "Ornaments",
-    price: "₹24,000.00",
-    image: "/assets/images/gold-ring.svg",
-  },
-  {
-    name: "The Prettiest",
-    price: "₹7,000.00",
-    image: "/assets/images/earings.svg",
-  },
-  {
-    name: "Gianna Ring",
-    price: "₹5,000.00",
-    image: "/assets/images/ringgold.svg",
-  },
-  {
-    name: "Silver Earring",
-    price: "₹25,000.00",
-    image: "/assets/images/silver.svg",
-  },
-  {
-    name: "Diamond Ring",
-    price: "₹24,000.00",
-    image: "/assets/images/diamond-ring-removebg-preview 1.svg",
-  },
-  {
-    name: "Gold Earrings",
-    price: "₹12,000.00",
-    image: "/assets/images/gold ring banner.svg",
-  },
-  {
-    name: "Necklace Set",
-    price: "₹25,000.00",
-    image: "/assets/images/diamond-necklaces.svg",
-  },
-  { name: "Bangles", price: "₹5,000.00", image: "/assets/images/slivernecklac.svg" },
-  {
-    name: "Necklace Set",
-    price: "₹15,000.00",
-    image: "/assets/images/necksliver.svg",
-  },
-  {
-    name: "Bridal Jewellery",
-    price: "₹2,60,000.00",
-    image: "/assets/images/bridal.svg",
-  },
-  {
-    name: "Gold Bangles",
-    price: "₹50,000.00",
-    image: "/assets/images/bangleset.svg",
-  },
-];
+// const items = [
+//   {
+//     name: "Snake Chain",
+//     price: "₹5,000.00",
+//     image: "/assets/images/silver-jain.svg",
+//   },
+//   {
+//     name: "Ornaments",
+//     price: "₹24,000.00",
+//     image: "/assets/images/gold-ring.svg",
+//   },
+//   {
+//     name: "The Prettiest",
+//     price: "₹7,000.00",
+//     image: "/assets/images/earings.svg",
+//   },
+//   {
+//     name: "Gianna Ring",
+//     price: "₹5,000.00",
+//     image: "/assets/images/ringgold.svg",
+//   },
+//   {
+//     name: "Silver Earring",
+//     price: "₹25,000.00",
+//     image: "/assets/images/silver.svg",
+//   },
+//   {
+//     name: "Diamond Ring",
+//     price: "₹24,000.00",
+//     image: "/assets/images/diamond-ring-removebg-preview 1.svg",
+//   },
+//   {
+//     name: "Gold Earrings",
+//     price: "₹12,000.00",
+//     image: "/assets/images/gold ring banner.svg",
+//   },
+//   {
+//     name: "Necklace Set",
+//     price: "₹25,000.00",
+//     image: "/assets/images/diamond-necklaces.svg",
+//   },
+//   {
+//     name: "Bangles",
+//     price: "₹5,000.00",
+//     image: "/assets/images/slivernecklac.svg",
+//   },
+//   {
+//     name: "Necklace Set",
+//     price: "₹15,000.00",
+//     image: "/assets/images/necksliver.svg",
+//   },
+//   {
+//     name: "Bridal Jewellery",
+//     price: "₹2,60,000.00",
+//     image: "/assets/images/bridal.svg",
+//   },
+//   {
+//     name: "Gold Bangles",
+//     price: "₹50,000.00",
+//     image: "/assets/images/bangleset.svg",
+//   },
+// ];
 
 export default function Collections() {
+  const navigate = useRouter();
+
   return (
     <Container className="py-5">
       <Row className="mb-4 text-center text-md-start align-items-center">
@@ -126,9 +134,14 @@ export default function Collections() {
       </Row>
 
       <Row xs={2} md={4} className="">
-        {items.map((item, index) => (
-          <Col key={index}>
-            <div className="h-100 row d-flex text-center border">
+        {allProducts.map((item, index) => (
+          <Col
+            key={index}
+            onClick={() => {
+              navigate.push(`/collections/${item.id}`);
+            }}
+          >
+            <div className="h-100 row d-flex text-center border cursor-pointer">
               <div className="col-md-6 d-flex align-items-center justify-content-center">
                 {" "}
                 <Card.Img
@@ -139,8 +152,10 @@ export default function Collections() {
               </div>
               <div className="col-md-6 d-flex align-items-center justify-content-center">
                 <Card.Body>
-                  <Card.Title className="fs-6">{item.name}</Card.Title>
-                  <Card.Text className="text-muted">{item.price}</Card.Text>
+                  <Card.Title className="fs-6">{item.title}</Card.Title>
+                  <Card.Text className="text-muted">
+                    {formatRupees(item.price)}
+                  </Card.Text>
                 </Card.Body>
               </div>
             </div>
