@@ -1,4 +1,4 @@
-import { diamondProducts, goldProducts, silverProducts } from "@/data/products";
+import { silverProducts } from "@/data/products";
 import JewelrySection from "@/components/JewelrySection/JewelrySection";
 import JewelryColumn from "@/Reusable/JewelryColumn";
 import React from "react";

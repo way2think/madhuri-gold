@@ -1,17 +1,8 @@
-// components/JewelrySection.tsx
 "use client";
 
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import classes from "./JewelrySection.module.css";
-import Link from "next/link";
-
-interface Product {
-  title: string;
-  price: string;
-  image: string;
-  link: string;
-}
 
 interface JewelrySectionProps {
   bannerImage: string;

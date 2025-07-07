@@ -3,11 +3,12 @@ import { allProducts, goldProducts } from "@/data/products";
 import ProductDetail from "@/components/ProductDetails/ProductDetail";
 
 interface PageProps {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
-const ProductDetailPage = ({ params }: PageProps) => {
-  const product = allProducts.find((p) => p.id === params.id);
+const ProductDetailPage = async ({ params }: PageProps) => {
+  const { id } = await params;
+  const product = allProducts.find((p) => p.id === id);
 
   if (!product) {
     notFound();
@@ -29,7 +30,9 @@ const ProductDetailPage = ({ params }: PageProps) => {
 export default ProductDetailPage;
 
 export async function generateStaticParams() {
-  return allProducts.map((product) => ({
-    id: product.id,
-  }));
+  return Promise.resolve(
+    allProducts.map((product) => ({
+      id: product.id,
+    }))
+  );
 }
