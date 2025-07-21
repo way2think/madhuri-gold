@@ -13,8 +13,7 @@
   text-transform: uppercase;
 }
 .navItemcontact {
-  margin-left: 100px;
-  border-left: 1px solid #ccc;
+  margin-left: 20px;
   color: #161920;
   font-size: 16px;
   text-transform: uppercase;
@@ -42,28 +41,43 @@
   .NavDropdown {
     margin-bottom: 10px;
   }
+  .container {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 576px) {
+  .container {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 768px) {
 }
 
 @media (min-width: 992px) {
-  .navItemcontact {
-    margin-left: 100px;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
 @media (min-width: 1200px) {
-  .navItemcontact {
-    margin-left: 100px;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
 @media (min-width: 1400px) {
-  .navItemcontact {
-    margin-left: 100px;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }

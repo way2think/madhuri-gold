@@ -10,18 +10,33 @@ import NavDropdown from "react-bootstrap/esm/NavDropdown";
 function NavHeader() {
   return (
     <Navbar expand="lg" className={`${classes.navbar} bg-body-tertiary`}>
-      <Container>
+      <Container className={classes.container}>
         <Navbar.Brand as="span">
           <Link href="/" className={classes.logo} passHref>
             <img src="/madhurilogo.svg" alt="Logo" className={classes.logo} />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Collapse id="navbarScroll" className="mt-2">
           <Nav className="m-auto my-2 my-lg-0" navbarScroll>
             <Nav.Item className={classes.navItemmobile}>
               <Link href="/" className={classes.navItem}>
                 Home
+              </Link>
+            </Nav.Item>
+            <Nav.Item className={classes.navItemmobile}>
+              <Link href="/" className={classes.navItem}>
+                Gold
+              </Link>
+            </Nav.Item>
+            <Nav.Item className={classes.navItemmobile}>
+              <Link href="/" className={classes.navItem}>
+                DIAMOND
+              </Link>
+            </Nav.Item>
+            <Nav.Item className={classes.navItemmobile}>
+              <Link href="/" className={classes.navItem}>
+                SILVER
               </Link>
             </Nav.Item>
             <Nav.Item className={classes.navItemmobile}>
@@ -73,7 +88,10 @@ function NavHeader() {
                 </Link>
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Item className={classes.navItemmobile}>
+            <Nav.Item
+              className={classes.navItemmobile}
+              style={{ marginLeft: "20px" }}
+            >
               <Link href="/contact-us" className={classes.navItemcontact}>
                 Contact Us
               </Link>

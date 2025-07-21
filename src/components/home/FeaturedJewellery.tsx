@@ -55,7 +55,7 @@ const FeaturedJewellery = () => {
   return (
     <Container className="py-5">
       <div className="d-flex justify-content-between align-items-center mb-4">
-        <h2 className={classes.sectionTitle}>Featured jewellery collections</h2>
+        <h2 className={classes.sectionTitle}>Latest collections</h2>
         <Button variant="link" className={classes.viewButton}>
           View Collections <ArrowRight size={16} />
         </Button>

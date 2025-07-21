@@ -10,13 +10,14 @@ export default function Home() {
   return (
     <>
       <div>
-        <Banner />
-        <JewelrySection />
-        <JewelryCategories />
+        {/* <Banner /> */}
+        {/* <JewelrySection /> */}
+        {/* <JewelryCategories /> */}
         <FeaturedJewellery />
-        <DiamondHero />
-        <Collections />
+        {/* <DiamondHero /> */}
         <GoldBanner />
+        <Collections />
+        
       </div>
     </>
   );

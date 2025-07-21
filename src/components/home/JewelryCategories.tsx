@@ -37,7 +37,7 @@ const JewelryCategories = () => {
           <Col key={index} xs={12} md={4} className="d-flex">
             <Link href={item.link} className="text-decoration-none w-100">
               <Card className="text-center border h-100 w-100 hover-shadow">
-                <Card.Body className="d-flex flex-column justify-content-between">
+                <Card.Body className="d-flex flex-column justify-content-between" >
                   <div className={classes.categoryItem}>
                     <Image
                       src={item.image}
