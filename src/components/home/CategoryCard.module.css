@@ -1,0 +1,19 @@
+.sectionTitle {
+  font-family: "Palatino Linotype", serif;
+  font-style: italic;
+  font-size: 34px;
+  color: #161920;
+}
+
+.subTitle {
+  font-family: "Palatino Linotype", serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #56544e;
+}
+
+.title {
+  font-family: "Palatino Linotype", serif;
+  font-style: normal;
+  font-size: 24px;
+}
