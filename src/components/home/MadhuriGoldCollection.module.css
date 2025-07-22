@@ -1,0 +1,89 @@
+.collectionContainer {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.title {
+  font-family: "Georgia", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+ max-width: 100%;
+}
+
+.caption {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: #000;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.sparkling {
+  font-weight: bold;
+  color: #cc7c1a;
+}
+
+.avenues {
+  font-style: italic;
+}
+
+.stunning {
+  font-weight: 400;
+}
+
+.ear {
+  color: maroon;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.daily {
+  color: #fff;
+}
+
+
+
+.chains {
+  font-style: italic;
+  color: #fff;
+  font-weight: 500;
+}
+
+.header{
+    margin-bottom: 40px;
+}
+
+.sectionTitle {
+  font-family: "Palatino Linotype", serif;
+  font-style: italic;
+  font-size: 34px;
+  color: #161920;
+}
+
+.subTitle {
+  font-family: "Palatino Linotype", serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #56544e;
+}

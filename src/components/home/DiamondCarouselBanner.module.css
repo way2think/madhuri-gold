@@ -1,0 +1,99 @@
+/* components/DiamondCarousel.module.css */
+
+.carouselWrap {
+  background-image: url("/assets/images/whiteshade.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 450px;
+}
+
+.carosuel {
+  width: 100%;
+  height: 400px;
+}
+
+.smallHeading {
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.heading {
+  font-size: 3rem;
+  font-style: italic;
+  font-family: "Georgia", serif;
+}
+
+.goldText {
+  background: linear-gradient(to right, #b88f2b, #e0c166);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shopBtn {
+  background: linear-gradient(to right, #d4af37, #ffce59);
+  border: none;
+  padding: 0.6rem 1.8rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shopBtn:hover {
+  background: linear-gradient(to right, #c79f2e, #f3ca55);
+}
+
+.custom-pagination {
+  display: flex !important;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: #5c3a1a;
+  opacity: 0.4;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.navBtn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #5c3a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navBtn:hover {
+  background-color: #5c3a1a;
+  color: white;
+}
+
+.customBullet {
+  width: 12px;
+  height: 12px;
+  background-color: #754c24; /* Brown */
+  transform: rotate(45deg);
+  border-radius: 2px;
+  display: inline-block;
+  margin: 0 6px;
+  transition: background-color 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000 !important; /* Black */
+}

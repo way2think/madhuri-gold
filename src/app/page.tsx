@@ -7,6 +7,8 @@ import Collections from "@/components/home/Collections";
 import GoldBanner from "@/components/home/GoldBanner";
 import CategoryGrid from "@/components/home/CategoryGrid";
 import TrendingSection from "@/components/home/TrendingSection";
+import MadhuriGoldCollection from "@/components/home/MadhuriGoldCollection";
+import DiamondCarouselBanner from "@/components/home/DiamondCarouselBanner";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
         {/* <Banner /> */}
         {/* <JewelrySection /> */}
         {/* <JewelryCategories /> */}
+        <DiamondCarouselBanner/>
+        <MadhuriGoldCollection/>
         <CategoryGrid />
         <FeaturedJewellery />
         <TrendingSection />
