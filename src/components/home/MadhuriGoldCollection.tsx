@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const MadhuriGoldCollection: React.FC = () => {
   return (
-    <Container className={styles.collection}>
+    <Container className={`${styles.collection} mt-5 mb-5`}>
       <div className={styles.header}>
         <h2 className={styles.sectionTitle}>Madhuri Gold Collections</h2>
         <p className={styles.subTitle}>Explore our newly launched collection</p>

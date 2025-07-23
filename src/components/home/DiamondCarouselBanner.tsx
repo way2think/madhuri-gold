@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import React from "react";
@@ -10,7 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import styles from "./DiamondCarouselBanner.module.css";
+import classes from "./DiamondCarouselBanner.module.css";
 
 const DiamondCarouselBanner: React.FC = () => {
   return (
@@ -26,23 +24,20 @@ const DiamondCarouselBanner: React.FC = () => {
         className="w-full "
       >
         <SwiperSlide>
-          <div className={`${styles.carouselWrap} row`}>
+          <div className={`${classes.carouselWrap} row`}>
             {/* Left Text Side */}
             <div className="col-md-8">
-              <div className="px-6 md:px-16 py-12 text-center md:text-left">
-                <h4 className="text-gray-700 text-sm tracking-widest font-semibold mb-2">
-                  LATEST ADDITIONS
-                </h4>
-                <h2 className="text-4xl md:text-5xl font-serif italic font-medium mb-4">
-                  <span className="text-black">Diamond</span>{" "}
-                  <span className="text-yellow-600">jewellery</span>
-                </h2>
-                <p className="text-gray-600 mb-6">
+              <div
+                className={`${classes.Diamondbanner} px-6 md:px-16 py-12 text-center md:text-left`}
+              >
+                <h4 className={`${classes.latest}`}>LATEST ADDITIONS</h4>
+                <h2 className={classes.Bannerheading2}>
+                  Diamond jewellery
+                </h2>{" "}
+                <p className={classes.glow}>
                   Glow forever in style with our exquisite new designs
                 </p>
-                <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-2 rounded-full shadow-md text-sm font-medium">
-                  Shop Now
-                </button>
+                <button className={classes.shop}>Shop Now</button>
               </div>
             </div>
             {/* Right Image Side */}
@@ -59,23 +54,20 @@ const DiamondCarouselBanner: React.FC = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={`${styles.carouselWrap} row`}>
+          <div className={`${classes.carouselWrap} row`}>
             {/* Left Text Side */}
             <div className="col-md-8">
-              <div className="px-6 md:px-16 py-12 text-center md:text-left">
-                <h4 className="text-gray-700 text-sm tracking-widest font-semibold mb-2">
-                  LATEST ADDITIONS
-                </h4>
-                <h2 className="text-4xl md:text-5xl font-serif italic font-medium mb-4">
-                  <span className="text-black">Diamond</span>{" "}
-                  <span className="text-yellow-600">jewellery</span>
-                </h2>
-                <p className="text-gray-600 mb-6">
+              <div
+                className={`${classes.Diamondbanner} px-6 md:px-16 py-12 text-center md:text-left`}
+              >
+                <h4 className={`${classes.latest}`}>LATEST ADDITIONS</h4>
+                <h2 className={classes.Bannerheading2}>
+                  Diamond jewellery
+                </h2>{" "}
+                <p className={classes.glow}>
                   Glow forever in style with our exquisite new designs
                 </p>
-                <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-6 py-2 rounded-full shadow-md text-sm font-medium">
-                  Shop Now
-                </button>
+                <button className={classes.shop}>Shop Now</button>
               </div>
             </div>
             {/* Right Image Side */}

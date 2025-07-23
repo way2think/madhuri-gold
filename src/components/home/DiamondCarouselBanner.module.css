@@ -1,7 +1,69 @@
 /* components/DiamondCarousel.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Noto+Sans+Tamil:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "palatino-italic";
+  src: url("/public/fonts/palatinolinotype_italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "palatino-bold";
+  src: url("/public/fonts/palatinolinotype_bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bold;
+}
+@font-face {
+  font-family: "palatino-bolditalic";
+  src: url("/public/fonts/palatinolinotype_bolditalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: bolditalic;
+}
 
 .carouselWrap {
-  background-image: url("/assets/images/whiteshade.svg");
+  background-image: url("/assets/images/white shade.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -96,4 +158,57 @@
 
 .swiper-pagination-bullet-active {
   background-color: #000 !important; /* Black */
+}
+
+.Diamondbanner {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  padding: 80px;
+  margin: 30px 0;
+}
+
+.Bannerheading2 {
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 1.2;
+  color: #161920;
+  background: radial-gradient(50% 249% at 50% 50%, #fca412 0%, #1a1402 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "palatino-italic";
+  font-style: italic;
+}
+
+.latest {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: #161920;
+  font-family: "Poppins", sans-serif;
+}
+
+.glow {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: #161920;
+  font-family: "palatino-italic";
+}
+
+.shop {
+  background: url("/assets/images/buttonback.svg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  border-radius: 20px;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: inline-flex;
 }
