@@ -102,7 +102,7 @@ export default function Collections() {
             <div className="col-md-6">
               <h2 className={classes.differently}> differently </h2>
             </div>
-            <div className="col-md-6 d-flex">
+            <div className={`${classes.smallImage} col-md-6 d-flex`}>
               <div className="d-flex justify-content-start justify-content-center ms-4 gap-2">
                 <Image
                   src="/assets/images/mask1.svg"
@@ -147,7 +147,7 @@ export default function Collections() {
                 <Card.Img
                   variant="left"
                   src={item.image}
-                  className="img-fluid"
+                  className={`${classes.imagecollection} `}
                 />
               </div>
               <div className="col-md-6 d-flex align-items-center justify-content-center">

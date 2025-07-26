@@ -17,3 +17,36 @@
   font-style: normal;
   font-size: 24px;
 }
+
+/* Tablet screens (≤ 992px) */
+@media (max-width: 992px) {
+  .sectionTitle {
+    font-size: 28px;
+  }
+
+  .subTitle {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}
+
+/* Mobile screens (≤ 576px) */
+@media (max-width: 576px) {
+  .sectionTitle {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .subTitle {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 18px;
+    text-align: center;
+  }
+}

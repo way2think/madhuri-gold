@@ -127,3 +127,83 @@
   font-weight: 500;
   display: inline-flex;
 }
+
+/* Base styles already defined above will apply to desktop/larger screens */
+
+/* Tablets (768px and below) */
+@media (max-width: 992px) {
+  .bannerWrapper {
+    margin: 1rem 2rem;
+    border-radius: 10px;
+    padding: 1.5rem;
+  }
+
+  .textWrapper {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .highlight {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile devices (576px and below) */
+@media (max-width: 576px) {
+  .bannerWrapper {
+    margin: 1rem;
+    border-radius: 8px;
+    padding: 1rem;
+    background-position: top;
+  }
+
+  .textWrapper {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .highlight {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+
+  .button {
+    font-size: 0.85rem;
+    padding: 0.4rem 1rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .GoldSavingScheme{
+    padding: .5rem;
+  }
+
+  /* .imageCol {
+    padding: 0.5rem;
+  } */
+
+  .bannerImage {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -67,6 +67,10 @@ const TestimonialCarousel: React.FC = () => {
             renderBullet: (_, className) =>
               `<span class="${className} ${classes.customBullet}"></span>`,
           }}
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+          }}
           className={classes.swiperWrapper}
         >
           {testimonials.map((testimonial, index) => (

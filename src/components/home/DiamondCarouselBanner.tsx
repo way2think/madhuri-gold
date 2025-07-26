@@ -42,12 +42,13 @@ const DiamondCarouselBanner: React.FC = () => {
             </div>
             {/* Right Image Side */}
             <div className="col-md-4">
-              <div className="relative w-full h-full">
+              <div className={`${classes.overallimage} relative w-full h-full`}>
                 <Image
                   src="/assets/images/dimondjfif.svg" // Ensure this image is in public/
                   alt="Diamond Model"
-                  width={400}
-                  height={450}
+                  width={0} // set width/height to 0 if you're controlling with CSS
+                  height={0}
+                  className={classes.diamondmodalimage}
                 />
               </div>
             </div>
@@ -72,12 +73,13 @@ const DiamondCarouselBanner: React.FC = () => {
             </div>
             {/* Right Image Side */}
             <div className="col-md-4">
-              <div className="relative w-full h-full">
+              <div className={`${classes.overallimage} relative w-full h-full`}>
                 <Image
                   src="/assets/images/trishapng.png" // Ensure this image is in public/
                   alt="Diamond Model"
-                  width={320}
-                  height={450}
+                  width={0} // set width/height to 0 if you're controlling with CSS
+                  height={0}
+                  className={classes.diamondmodalimage}
                 />
               </div>
             </div>

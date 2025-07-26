@@ -8,7 +8,7 @@ import styles from "./GoldSavingScheme.module.css";
 const GoldSavingScheme: React.FC = () => {
   return (
     <div className={styles.bannerWrapper}>
-      <Container className="p-5">
+      <Container className={styles.GoldSavingScheme}>
         <Row className="align-items-center g-0">
           <Col xs={12} md={5} className={styles.imageCol}></Col>
           <Col xs={12} md={7} className="p-4">

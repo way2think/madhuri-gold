@@ -212,3 +212,110 @@
   font-weight: 500;
   display: inline-flex;
 }
+
+.diamondmodalimage {
+  width: 100%; /* Or use a specific px/rem value like 300px */
+  height: auto; /* Maintains aspect ratio */
+  max-width: 400px; /* Limits the width */
+  max-height: 450px; /* Limits the height */
+  object-fit: cover; /* Optional: cover, contain, fill */
+}
+
+/* Tablet screens (max-width: 992px) */
+@media (max-width: 992px) {
+  .carouselWrap {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .carosuel {
+    height: 350px;
+  }
+
+  .Diamondbanner {
+    padding: 40px;
+    margin: 20px 0;
+  }
+
+  .Bannerheading2 {
+    font-size: 3.5rem;
+  }
+
+  .latest,
+  .glow {
+    font-size: 1.25rem;
+  }
+
+  .shop {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Mobile screens (max-width: 576px) */
+@media (max-width: 576px) {
+  .carouselWrap {
+    height: auto;
+    padding: 1rem;
+    background-position: top;
+    flex-direction: column-reverse;
+  }
+
+  .carosuel {
+    height: 300px;
+  }
+
+  .Diamondbanner {
+    padding: 20px;
+    margin: 20px 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Bannerheading2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .latest,
+  .glow {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .shop {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .navBtn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .custom-pagination {
+    gap: 4px;
+  }
+
+  .customBullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+  }
+  .diamondmodalimage {
+    max-width: 60%;
+  }
+  .overallimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

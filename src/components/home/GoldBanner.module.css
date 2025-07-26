@@ -73,8 +73,8 @@
   margin-top: 1rem;
   font-family: "palatino-italic";
   position: relative;
-    bottom: 50px;
-    left: -40px;
+  bottom: 50px;
+  left: -40px;
 }
 
 .Infinite {
@@ -133,4 +133,114 @@
 
 .arrowIcon {
   margin-left: 8px;
+}
+
+/* Tablet (≤ 992px) */
+@media (max-width: 992px) {
+  .mainHeading {
+    font-size: 1.5rem;
+  }
+
+  .bridalTitle,
+  .madhuriTitle {
+    font-size: 1.6rem;
+    margin-left: 40px;
+  }
+
+  .sparkle {
+    font-size: 2.5rem;
+    bottom: 30px;
+    left: -20px;
+  }
+
+  .Infinite {
+    font-size: 2.8rem;
+  }
+
+  .actoressgirl {
+    max-width: 100%;
+    margin-left: 20px;
+  }
+
+  .bridalImage {
+    max-width: 75%;
+    right: 0;
+  }
+
+  .exquisiteText {
+    font-size: 1.4rem;
+    margin-top: 6rem;
+  }
+
+  .findStoreBtn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .arrow {
+    margin-left: 8px;
+    max-width: 14%;
+    margin-top: 10px;
+  }
+}
+
+/* Mobile (≤ 576px) */
+@media (max-width: 576px) {
+  .heroSection {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .mainHeading {
+    font-size: 1.3rem;
+  }
+
+  .bridalTitle,
+  .madhuriTitle {
+    font-size: 1.3rem;
+    margin-left: 0;
+  }
+
+  .madhuriSub {
+    font-size: 0.95rem;
+  }
+
+  .sparkle {
+    font-size: 2rem;
+    bottom: 15px;
+    left: 0;
+  }
+
+  .Infinite {
+    font-size: 2.2rem;
+  }
+
+  .actoressgirl,
+  .bridalImage {
+    max-width: 100%;
+    margin-left: 0;
+    right: 0;
+  }
+
+  .exquisiteText {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+  }
+
+  .findStoreBtn {
+    font-size: 0.85rem;
+    padding: 0.4rem 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .arrow {
+    font-size: 0.9rem;
+    max-width: 18%;
+    margin-top: 5px;
+  }
+
+  .arrowIcon {
+    margin-left: 5px;
+  }
 }
