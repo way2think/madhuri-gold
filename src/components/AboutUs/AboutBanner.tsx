@@ -1,8 +1,8 @@
 // components/Banner.tsx
-"use client";
+'use client';
 
-import Image from "next/image";
-import classes from "./AboutBanner.module.css"; // Assuming you have a CSS module for styles
+import Image from 'next/image';
+import classes from './AboutBanner.module.css'; // Assuming you have a CSS module for styles
 
 const AboutBanner = () => {
   return (

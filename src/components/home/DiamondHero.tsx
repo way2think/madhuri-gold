@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import { Container, Row, Col, Button } from "react-bootstrap";
-import Image from "next/image";
-import classes from "./DiamondHero.module.css";
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import Image from 'next/image';
+import classes from './DiamondHero.module.css';
 
 const DiamondHero = () => {
   return (
     <section className={classes.heroSection}>
       <Container>
-        <Row className="align-items-center" style={{ position: "relative" }}>
+        <Row className="align-items-center" style={{ position: 'relative' }}>
           {/* Left Column */}
           <Col md={3} className={classes.leftBox}>
             <div className={classes.leftBoxContent}>
@@ -30,11 +30,11 @@ const DiamondHero = () => {
             </div>
             <div className="d-flex">
               <Button className={classes.storeButton}>Find Store</Button>
-               <img
-              src="/assets/images/arrow_outward.svg"
-              alt="Banner Image"
-              className={classes.arrow}
-            />
+              <img
+                src="/assets/images/arrow_outward.svg"
+                alt="Banner Image"
+                className={classes.arrow}
+              />
             </div>
           </Col>
 

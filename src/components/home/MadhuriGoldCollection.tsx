@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
-import styles from "./MadhuriGoldCollection.module.css";
-import Link from "next/link";
+import React from 'react';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import styles from './MadhuriGoldCollection.module.css';
+import Link from 'next/link';
 
 const MadhuriGoldCollection: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ const MadhuriGoldCollection: React.FC = () => {
       <Row className="gy-4">
         <Col xs={12} md={6}>
           <Link href="/">
-            <div className={styles.card + " " + styles.leftCard}>
+            <div className={styles.card + ' ' + styles.leftCard}>
               <Image
                 src="/assets/images/sprakling.svg"
                 alt="Sparkling Necklace"

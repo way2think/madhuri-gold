@@ -1,4 +1,4 @@
-import DeliveryPolicy from "@/components/Delivery-Shipping-Policy/DeliveryPolicy";
+import DeliveryPolicy from '@/components/Delivery-Shipping-Policy/DeliveryPolicy';
 
 export default function DeliveryShippingPage() {
   return (

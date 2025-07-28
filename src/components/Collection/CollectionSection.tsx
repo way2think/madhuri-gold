@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import { Container, Row, Col, Card, Image } from "react-bootstrap";
-import { useRouter, useSearchParams } from "next/navigation";
-import { useState, useMemo, useEffect } from "react";
-import classes from "./CollectionSection.module.css";
-import { allProducts } from "@/data/products";
-import { formatRupees } from "@/util";
-import FilterSort from "./FilterSort";
-import FilterModal from "./FilterModal";
+import { Container, Row, Col, Card, Image } from 'react-bootstrap';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { useState, useMemo, useEffect } from 'react';
+import classes from './CollectionSection.module.css';
+import { allProducts } from '@/data/products';
+import { formatRupees } from '@/util';
+import FilterSort from './FilterSort';
+import FilterModal from './FilterModal';
 
 interface FilterOptions {
   metal: string[];
@@ -20,7 +20,7 @@ export default function CollectionSection() {
   const navigate = useRouter();
   const searchParams = useSearchParams();
 
-  const [sortOption, setSortOption] = useState("");
+  const [sortOption, setSortOption] = useState('');
   const [showFilterModal, setShowFilterModal] = useState(false);
   const [filters, setFilters] = useState<FilterOptions>({
     metal: [],
@@ -37,15 +37,15 @@ export default function CollectionSection() {
       gender: [],
       occasion: [],
     };
-    let newSortOption = "";
+    let newSortOption = '';
 
     searchParams.forEach((value, key) => {
       if (key in newFilters) {
-        newFilters[key as keyof FilterOptions] = value.split(",");
-      } else if (key === "sort") {
+        newFilters[key as keyof FilterOptions] = value.split(',');
+      } else if (key === 'sort') {
         newSortOption = value;
-      } else if (key === "productType") {
-        newFilters.productType = value.split(",");
+      } else if (key === 'productType') {
+        newFilters.productType = value.split(',');
       }
     });
     setFilters(newFilters);
@@ -70,11 +70,11 @@ export default function CollectionSection() {
       products = products.filter((p) => filters.occasion.includes(p.occasion));
     }
 
-    if (sortOption === "price-asc") {
+    if (sortOption === 'price-asc') {
       products.sort((a, b) => a.price - b.price);
-    } else if (sortOption === "price-desc") {
+    } else if (sortOption === 'price-desc') {
       products.sort((a, b) => b.price - a.price);
-    } else if (sortOption === "latest") {
+    } else if (sortOption === 'latest') {
       products.sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime());
     }
 
@@ -88,9 +88,9 @@ export default function CollectionSection() {
       gender: [],
       occasion: [],
     });
-    setSortOption(""); // Clear sort option as well
+    setSortOption(''); // Clear sort option as well
     setShowFilterModal(false);
-    navigate.push("/collections"); // Clear URL params
+    navigate.push('/collections'); // Clear URL params
   };
 
   const activeFilterCount = useMemo(() => {
@@ -165,7 +165,9 @@ export default function CollectionSection() {
       </Row>
       <Row className="mb-4 align-items-center justify-content-between">
         <Col md={6}>
-          <p className="mb-0">Showing {filteredProducts.length} of {allProducts.length} designs</p>
+          <p className="mb-0">
+            Showing {filteredProducts.length} of {allProducts.length} designs
+          </p>
         </Col>
         <Col md={6} className="d-flex justify-content-end">
           <FilterSort
@@ -187,7 +189,7 @@ export default function CollectionSection() {
             >
               <Card
                 className="h-100 text-center border-0 shadow-sm"
-                style={{ background: "#F1F1F1" }}
+                style={{ background: '#F1F1F1' }}
               >
                 <Card.Img
                   variant="top"

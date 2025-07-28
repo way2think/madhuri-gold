@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import classes from "./AboutUsContent.module.css";
+import classes from './AboutUsContent.module.css';
 
 const AboutUsContent = () => {
   return (
@@ -36,12 +36,12 @@ const AboutUsContent = () => {
         guaranteed.
       </p>
       <p className="text-sm md:text-base">
-        <strong className={`${classes.mission}`}>Our Mission:</strong>{" "}
+        <strong className={`${classes.mission}`}>Our Mission:</strong>{' '}
         <span className="text-yellow-600 italic">
-          <span className={`${classes.madhuri}`}>&quot;Madhuri Gold&quot;</span>{" "}
-          Want to become a{" "}
+          <span className={`${classes.madhuri}`}>&quot;Madhuri Gold&quot;</span>{' '}
+          Want to become a{' '}
           <span className={`${classes.first}`}>first choice</span>
-        </span>{" "}
+        </span>{' '}
         to every household for Gold investments, Good Designs.
       </p>
       <p className="text-sm md:text-base">

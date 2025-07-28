@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Link from "next/link";
-import classes from "../layouts/NavHeader.module.css";
-import NavDropdown from "react-bootstrap/esm/NavDropdown";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Link from 'next/link';
+import classes from '../layouts/NavHeader.module.css';
+import NavDropdown from 'react-bootstrap/esm/NavDropdown';
 
 function NavHeader() {
   return (
@@ -30,12 +30,18 @@ function NavHeader() {
               </Link>
             </Nav.Item>
             <Nav.Item className={classes.navItemmobile}>
-              <Link href="/collections?metal=diamond" className={classes.navItem}>
+              <Link
+                href="/collections?metal=diamond"
+                className={classes.navItem}
+              >
                 DIAMOND
               </Link>
             </Nav.Item>
             <Nav.Item className={classes.navItemmobile}>
-              <Link href="/collections?metal=silver" className={classes.navItem}>
+              <Link
+                href="/collections?metal=silver"
+                className={classes.navItem}
+              >
                 SILVER
               </Link>
             </Nav.Item>
@@ -53,7 +59,7 @@ function NavHeader() {
               title="Our Polices"
               id="basic-nav-dropdown"
               className={`${classes.NavDropdown} p-0`}
-              style={{ padding: 0, color: "#000" }}
+              style={{ padding: 0, color: '#000' }}
             >
               <NavDropdown.Item as="span">
                 <Link
@@ -90,7 +96,7 @@ function NavHeader() {
             </NavDropdown>
             <Nav.Item
               className={classes.navItemmobile}
-              style={{ marginLeft: "20px" }}
+              style={{ marginLeft: '20px' }}
             >
               <Link href="/contact-us" className={classes.navItemcontact}>
                 Contact Us

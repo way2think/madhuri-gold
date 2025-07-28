@@ -1,10 +1,10 @@
 .filterSortContainer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1rem; /* Added gap */
-  }
-  
-  .sortDropdown {
-    width: 200px;
-  }
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem; /* Added gap */
+}
+
+.sortDropdown {
+  width: 200px;
+}

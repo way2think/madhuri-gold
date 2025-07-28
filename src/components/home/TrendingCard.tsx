@@ -1,8 +1,8 @@
 // components/TrendingCard.tsx
-"use client";
-import React from "react";
-import { Card } from "react-bootstrap";
-import classes from "./TrendingCard.module.css";
+'use client';
+import React from 'react';
+import { Card } from 'react-bootstrap';
+import classes from './TrendingCard.module.css';
 
 interface TrendingCardProps {
   title: string;
@@ -15,7 +15,7 @@ const TrendingCard: React.FC<TrendingCardProps> = ({ title, image }) => {
       <Card.Img
         variant="top"
         src={image}
-        style={{ borderRadius: "12px", objectFit: "cover", height: "350px" }}
+        style={{ borderRadius: '12px', objectFit: 'cover', height: '350px' }}
       />
       <Card.Body className="px-0 d-flex justify-content-start align-items-start">
         <Card.Title className={`${classes.title} fw-normal text-left fs-5`}>

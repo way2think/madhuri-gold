@@ -1,6 +1,6 @@
-import { notFound } from "next/navigation";
-import { allProducts, goldProducts } from "@/data/products";
-import ProductDetail from "@/components/ProductDetails/ProductDetail";
+import { notFound } from 'next/navigation';
+import { allProducts, goldProducts } from '@/data/products';
+import ProductDetail from '@/components/ProductDetails/ProductDetail';
 
 interface PageProps {
   params: Promise<{ id: string }>;

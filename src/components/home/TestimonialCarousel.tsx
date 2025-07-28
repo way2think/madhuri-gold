@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Container } from "react-bootstrap";
-import classes from "./TestimonialCarousel.module.css";
-import Image from "next/image";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Container } from 'react-bootstrap';
+import classes from './TestimonialCarousel.module.css';
+import Image from 'next/image';
 
 interface Testimonial {
   name: string;
@@ -17,28 +17,28 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Ms. Sindhu Kandru",
+    name: 'Ms. Sindhu Kandru',
     message:
       'We are proud to be a part of all her milestone events both big and small since her childhood. "All my jewellery I buy from vaibhav jewelers only, all are unique pieces. I never found similar jewelers outside"',
-    image: "/assets/images/sindhu.svg",
+    image: '/assets/images/sindhu.svg',
   },
   {
-    name: "Ms. Sridevi Adibatla",
+    name: 'Ms. Sridevi Adibatla',
     message:
       'We are proud to be a part of all her milestone events both big and small since her childhood. "All my jewellery I buy from vaibhav jewelers only, all are unique pieces. I never found similar jewelers outside"',
-    image: "/assets/images/sridevi.svg",
+    image: '/assets/images/sridevi.svg',
   },
   {
-    name: "Ms. Sindhu Kandru",
+    name: 'Ms. Sindhu Kandru',
     message:
       'We are proud to be a part of all her milestone events both big and small since her childhood. "All my jewellery I buy from vaibhav jewelers only, all are unique pieces. I never found similar jewelers outside"',
-    image: "/assets/images/sindhu.svg",
+    image: '/assets/images/sindhu.svg',
   },
   {
-    name: "Ms. Sridevi Adibatla",
+    name: 'Ms. Sridevi Adibatla',
     message:
       'We are proud to be a part of all her milestone events both big and small since her childhood. "All my jewellery I buy from vaibhav jewelers only, all are unique pieces. I never found similar jewelers outside"',
-    image: "/assets/images/sridevi.svg",
+    image: '/assets/images/sridevi.svg',
   },
 ];
 
@@ -58,11 +58,11 @@ const TestimonialCarousel: React.FC = () => {
           slidesPerView={2}
           spaceBetween={30}
           navigation={{
-            nextEl: ".custom-next",
-            prevEl: ".custom-prev",
+            nextEl: '.custom-next',
+            prevEl: '.custom-prev',
           }}
           pagination={{
-            el: ".custom-pagination",
+            el: '.custom-pagination',
             clickable: true,
             renderBullet: (_, className) =>
               `<span class="${className} ${classes.customBullet}"></span>`,
@@ -76,7 +76,7 @@ const TestimonialCarousel: React.FC = () => {
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
               <div className={`${classes.card} row`}>
-                <div className="col-md-8" style={{ textAlign: "left" }}>
+                <div className="col-md-8" style={{ textAlign: 'left' }}>
                   <p className={classes.message}>{testimonial.message}</p>
                   <i className={classes.name}>- {testimonial.name}</i>
                 </div>

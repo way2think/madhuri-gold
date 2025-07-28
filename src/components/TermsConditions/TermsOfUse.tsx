@@ -1,6 +1,6 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import classes from "./TermsOfUse.module.css"; // Use your existing module
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import classes from './TermsOfUse.module.css'; // Use your existing module
 
 const TermsOfUse = () => {
   return (

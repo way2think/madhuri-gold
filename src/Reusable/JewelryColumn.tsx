@@ -1,12 +1,12 @@
 // components/JewelrySection.tsx
-"use client";
+'use client';
 
-import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
-import classes from "./JewelryColumn.module.css";
-import Link from "next/link";
-import { Product } from "@/types";
-import { formatRupees } from "@/util";
+import React from 'react';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import classes from './JewelryColumn.module.css';
+import Link from 'next/link';
+import { Product } from '@/types';
+import { formatRupees } from '@/util';
 
 interface JewelrySectionProps {
   subheading?: string;
@@ -25,7 +25,7 @@ const JewelryColumn: React.FC<JewelrySectionProps> = ({
           <Col key={idx} xs={6} md={3}>
             <Link
               href={
-                item.id.startsWith("collections/")
+                item.id.startsWith('collections/')
                   ? `/${item.id}`
                   : `/collections/${item.id}`
               }
@@ -33,7 +33,7 @@ const JewelryColumn: React.FC<JewelrySectionProps> = ({
             >
               <Card
                 className="border-0 shadow-sm h-100 text-center"
-                style={{ background: "#F1F1F1" }}
+                style={{ background: '#F1F1F1' }}
               >
                 <Card.Img
                   variant="top"

@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { Container, Row, Col, Card, Image } from "react-bootstrap";
-import classes from "./Collections.module.css"; // Assuming you have a CSS module for styles
-import { allProducts } from "@/data/products";
-import { formatRupees } from "@/util";
-import { useRouter } from "next/navigation";
+import { Container, Row, Col, Card, Image } from 'react-bootstrap';
+import classes from './Collections.module.css'; // Assuming you have a CSS module for styles
+import { allProducts } from '@/data/products';
+import { formatRupees } from '@/util';
+import { useRouter } from 'next/navigation';
 
 // const items = [
 //   {
@@ -78,7 +78,7 @@ export default function Collections() {
         <Col md={6}>
           <div className={`${classes.textContainer} row`}>
             <div className="col-md-6">
-              {" "}
+              {' '}
               <h2 className={`${classes.serif} mb-2`}>
                 Our
                 <br /> <span className="fst-italic">Collections</span>
@@ -143,7 +143,7 @@ export default function Collections() {
           >
             <div className="h-100 row d-flex text-center border cursor-pointer">
               <div className="col-md-6 d-flex align-items-center justify-content-center">
-                {" "}
+                {' '}
                 <Card.Img
                   variant="left"
                   src={item.image}

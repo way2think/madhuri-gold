@@ -1,10 +1,10 @@
 // components/GoldBanner.tsx
-"use client";
+'use client';
 
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from 'react-bootstrap';
 // import Image from "next/image";
-import classes from "./GoldBanner.module.css";
-import { useRouter } from "next/navigation";
+import classes from './GoldBanner.module.css';
+import { useRouter } from 'next/navigation';
 
 const GoldBanner = () => {
   const navigate = useRouter();
@@ -23,7 +23,7 @@ const GoldBanner = () => {
               className="img-fluid"
             />
             <p className={classes.exquisiteText}>
-              Exquisite{" "}
+              Exquisite{' '}
               <span className={classes.goldItalic}>Gold Jewellery</span>
               <br />
               For extraordinary you
@@ -47,11 +47,14 @@ const GoldBanner = () => {
             <h3 className={classes.sparkle}>
               <span className={classes.Infinite}>Infinite</span> Sparkle
             </h3>
-            <Button className={classes.findStoreBtn} onClick={() => navigate.push("/collections?metal=gold")}>
+            <Button
+              className={classes.findStoreBtn}
+              onClick={() => navigate.push('/collections?metal=gold')}
+            >
               Find Store <span className={classes.arrowIcon}>↗</span>
             </Button>
             <img
-              src={"/assets/images/arrow_outward.svg"}
+              src={'/assets/images/arrow_outward.svg'}
               alt="Arrow"
               className={classes.arrow}
             />

@@ -1,6 +1,6 @@
-import React from "react";
-import classes from "./Banner.module.css"; // Assuming you have a CSS module for styles
-import EarringCarousel from "./EarringCarousel";
+import React from 'react';
+import classes from './Banner.module.css'; // Assuming you have a CSS module for styles
+import EarringCarousel from './EarringCarousel';
 
 const Banner = () => {
   return (
@@ -13,7 +13,7 @@ const Banner = () => {
               <span className={classes.unleash}>Unleash</span>the
             </h1>
             <div className="d-flex align-items-center justify-content-center">
-              {" "}
+              {' '}
               <h1 className={classes.Bannerheading3}>shining</h1>
               <img
                 src="/assets/images/gold ring banner.svg"
@@ -32,7 +32,7 @@ const Banner = () => {
           </div>
         </div>
         <div className="col-12 col-md-3 col-lg-3">
-          <EarringCarousel/>
+          <EarringCarousel />
         </div>
       </div>
     </div>

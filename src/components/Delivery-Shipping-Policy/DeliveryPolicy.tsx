@@ -1,6 +1,6 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import classes from "./DeliveryPolicy.module.css"; // Adjust the path as necessary
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import classes from './DeliveryPolicy.module.css'; // Adjust the path as necessary
 
 const DeliveryPolicy = () => {
   return (
@@ -13,7 +13,9 @@ const DeliveryPolicy = () => {
             Delivery and Shipping Policy
           </h1>
 
-          <h5 className={`fw-bold mb-2 ${classes.shippingheading}`}>Shipping policy</h5>
+          <h5 className={`fw-bold mb-2 ${classes.shippingheading}`}>
+            Shipping policy
+          </h5>
           <p className={`mb-4 ${classes.shippingpara}`}>
             Madhuri Gold Palace offers shipping on every order within India.
             Your order will be shipped to you with fully secured logistics
@@ -21,7 +23,9 @@ const DeliveryPolicy = () => {
             for any damage or tamper before receiving or signing the receipt.
           </p>
 
-          <h5 className={`fw-bold mb-2 ${classes.shippingheading}`}>Delivery</h5>
+          <h5 className={`fw-bold mb-2 ${classes.shippingheading}`}>
+            Delivery
+          </h5>
           <p className={`mb-4 ${classes.shippingpara}`}>
             Packages will be dispatched within 2 days of payment and are shipped
             via courier service. <br />

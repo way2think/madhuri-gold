@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import classes from "./ProductDetail.module.css";
-import JewelryColumn from "@/Reusable/JewelryColumn";
-import { Product } from "@/types";
-import { formatRupees } from "@/util";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import classes from './ProductDetail.module.css';
+import JewelryColumn from '@/Reusable/JewelryColumn';
+import { Product } from '@/types';
+import { formatRupees } from '@/util';
 
 export interface ProductDetailProps {
   image: string;
@@ -39,18 +39,18 @@ const ProductDetail: React.FC<ProductDetailProps> = ({
               // Home should link to "/"
               const path =
                 idx === 0
-                  ? "/"
-                  : "/" +
+                  ? '/'
+                  : '/' +
                     breadcrumb
                       .slice(1, idx + 1)
-                      .map((c) => c.toLowerCase().replace(/\s+/g, "-"))
-                      .join("/");
+                      .map((c) => c.toLowerCase().replace(/\s+/g, '-'))
+                      .join('/');
               return (
-                <li key={idx} style={{ display: "inline" }}>
+                <li key={idx} style={{ display: 'inline' }}>
                   {!isLast ? (
                     <>
                       <a href={path}>{crumb}</a>
-                      {" / "}
+                      {' / '}
                     </>
                   ) : (
                     <span>{crumb}</span>

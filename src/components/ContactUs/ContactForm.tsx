@@ -1,12 +1,12 @@
 // components/ContactForm.tsx
-"use client";
+'use client';
 
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import classes from "./ContactForm.module.css"; // Adjust the path as necessary
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import classes from './ContactForm.module.css'; // Adjust the path as necessary
 
 const ContactForm = () => {
   return (
-    <div className="py-5" style={{ background: "#ffff" }}>
+    <div className="py-5" style={{ background: '#ffff' }}>
       <Container>
         <h3 className={`${classes.getInTouch} mb-4 fw-bold`}>Get in Touch</h3>
         <Form>
@@ -36,11 +36,11 @@ const ContactForm = () => {
               variant="warning"
               type="submit"
               style={{
-                backgroundColor: "#c17d1f",
-                border: "none",
-                padding: "10px 30px",
-                color: "#fff",
-                width: "50%",
+                backgroundColor: '#c17d1f',
+                border: 'none',
+                padding: '10px 30px',
+                color: '#fff',
+                width: '50%',
               }}
             >
               Send Now

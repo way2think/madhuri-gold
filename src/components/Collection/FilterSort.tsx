@@ -1,5 +1,5 @@
-import { Form, Button, Badge } from "react-bootstrap";
-import classes from "./FilterSort.module.css";
+import { Form, Button, Badge } from 'react-bootstrap';
+import classes from './FilterSort.module.css';
 
 interface FilterSortProps {
   sortOption: string;
@@ -20,7 +20,9 @@ const FilterSort = ({
         className={classes.sortDropdown}
         value={sortOption}
         onChange={(e) => setSortOption(e.target.value)}
-        style={{ marginRight: "1rem" }}
+        style={{ marginRight: '1rem' }}
+        aria-label="Sort collections"
+        title="Sort collections"
       >
         <option value="">Sort by</option>
         <option value="latest">Latest collections</option>
@@ -32,7 +34,7 @@ const FilterSort = ({
         onClick={() => setShowFilterModal(true)}
         className="position-relative"
       >
-        Filter
+        More Filter
         {activeFilterCount > 0 && (
           <Badge
             bg="danger"

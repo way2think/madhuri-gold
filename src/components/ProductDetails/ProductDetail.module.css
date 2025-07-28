@@ -1,6 +1,6 @@
 .productDetail {
   padding: 4rem 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #fff;
 }
 
@@ -14,8 +14,8 @@
   margin-bottom: 1rem;
 }
 
-.spec{
-    font-size: 1rem;
+.spec {
+  font-size: 1rem;
 }
 
 .title {

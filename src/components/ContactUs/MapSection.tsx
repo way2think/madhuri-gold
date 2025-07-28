@@ -1,12 +1,12 @@
 // components/MapSection.tsx
-"use client";
+'use client';
 
-import { Container } from "react-bootstrap";
-import classes from "./MapSection.module.css"; // Adjust the path as necessary
+import { Container } from 'react-bootstrap';
+import classes from './MapSection.module.css'; // Adjust the path as necessary
 
 const MapSection = () => {
   return (
-    <section className="py-5" style={{ background: "#fff" }}>
+    <section className="py-5" style={{ background: '#fff' }}>
       <Container>
         <h3 className={`${classes.findUs} mb-4 fw-bold`}>Find Us</h3>
         <div className="ratio ratio-16x9">

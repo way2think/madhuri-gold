@@ -1,18 +1,18 @@
 // components/FeaturedJewellery.tsx
-"use client";
+'use client';
 
-import { Container } from "react-bootstrap";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import Image from "next/image";
-import classes from "./FeaturedJewellery.module.css";
+import { Container } from 'react-bootstrap';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+import Image from 'next/image';
+import classes from './FeaturedJewellery.module.css';
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { featuredProducts } from "@/data/products";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { featuredProducts } from '@/data/products';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 // const jewelleryItems = [
 //   {
@@ -59,10 +59,9 @@ const FeaturedJewellery = () => {
         {/* <Button variant="link" className={classes.viewButton} onClick={() => navigate.push("/collections?sort=latest")}>
           View Collections <ArrowRight size={16} />
         </Button> */}
-         <Link href="/collections?sort=latest" className="text-decoration-none">
+        <Link href="/collections?sort=latest" className="text-decoration-none">
           {/* <span className="fw-bold px-3 py-2 border rounded bg-light text-dark d-inline-flex align-items-center"> */}
-            <span className="me-2">View All</span> →
-          {/* </span> */}
+          <span className="me-2">View All</span> →{/* </span> */}
         </Link>
       </div>
 
@@ -76,11 +75,11 @@ const FeaturedJewellery = () => {
           1200: { slidesPerView: 4 },
         }}
         navigation={{
-          nextEl: ".custom-next",
-          prevEl: ".custom-prev",
+          nextEl: '.custom-next',
+          prevEl: '.custom-prev',
         }}
         pagination={{
-          el: ".custom-pagination",
+          el: '.custom-pagination',
           clickable: true,
           renderBullet: (_, className) =>
             `<span class="${className} ${classes.customBullet}"></span>`,
@@ -110,13 +109,13 @@ const FeaturedJewellery = () => {
         <div
           className="custom-pagination"
           style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: "6px",
-            marginBottom: "8px",
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '6px',
+            marginBottom: '8px',
           }}
         />
-        <div className="d-flex gap-3  mt-2" style={{ marginLeft: "auto" }}>
+        <div className="d-flex gap-3  mt-2" style={{ marginLeft: 'auto' }}>
           <div className={`custom-prev ${classes.navBtn}`}>
             <Image
               src="/assets/images/arrow_left.svg"

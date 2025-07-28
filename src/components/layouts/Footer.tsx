@@ -1,5 +1,5 @@
-import Link from "next/link";
-import classes from "./Footer.module.css";
+import Link from 'next/link';
+import classes from './Footer.module.css';
 
 const Footer = () => {
   return (
@@ -175,7 +175,7 @@ const Footer = () => {
         </div>
         <p className={classes.Copyright}>
           Copyright © 2025 Madhuri Gold. All rights reserved! Design and
-          developed by{" "}
+          developed by{' '}
           <strong>
             <a href="https://proppify.in/" target="_blank" rel="noopener">
               Proppify Solutions

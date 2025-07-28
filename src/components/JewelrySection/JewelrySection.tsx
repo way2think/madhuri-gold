@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import classes from "./JewelrySection.module.css";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import classes from './JewelrySection.module.css';
 
 interface JewelrySectionProps {
   bannerImage: string;

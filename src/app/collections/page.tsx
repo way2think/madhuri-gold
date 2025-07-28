@@ -1,5 +1,5 @@
-import { Suspense } from "react";
-import CollectionSection from "@/components/Collection/CollectionSection";
+import { Suspense } from 'react';
+import CollectionSection from '@/components/Collection/CollectionSection';
 
 export default function CollectionPage() {
   return (

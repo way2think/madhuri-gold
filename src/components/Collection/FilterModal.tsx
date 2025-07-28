@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { Offcanvas, Button, Form } from "react-bootstrap";
-import classes from "./FilterModal.module.css";
+import { useState } from 'react';
+import { Offcanvas, Button, Form } from 'react-bootstrap';
+import classes from './FilterModal.module.css';
 
 interface FilterOptions {
   metal: string[];
@@ -25,10 +25,10 @@ interface FilterCategories {
 }
 
 const filterCategories: FilterCategories = {
-  metal: ["gold", "diamond", "silver"],
-  productType: ["bangles", "rings", "bracelets", "earrings", "necklace"],
-  gender: ["male", "female", "unisex"],
-  occasion: ["wedding", "engagement", "everyday", "special"],
+  metal: ['gold', 'diamond', 'silver'],
+  productType: ['bangles', 'rings', 'bracelets', 'earrings', 'necklace'],
+  gender: ['male', 'female', 'unisex'],
+  occasion: ['wedding', 'engagement', 'everyday', 'special'],
 };
 
 const FilterModal = ({
@@ -38,7 +38,8 @@ const FilterModal = ({
   setFilters,
   clearFilters,
 }: FilterModalProps) => {
-  const [selectedCategory, setSelectedCategory] = useState<keyof FilterCategories>("metal");
+  const [selectedCategory, setSelectedCategory] =
+    useState<keyof FilterCategories>('metal');
 
   const handleFilterChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value, checked } = e.target;
@@ -46,7 +47,9 @@ const FilterModal = ({
       ...prevFilters,
       [name as keyof FilterOptions]: checked
         ? [...prevFilters[name as keyof FilterOptions], value]
-        : prevFilters[name as keyof FilterOptions].filter((item: string) => item !== value),
+        : prevFilters[name as keyof FilterOptions].filter(
+            (item: string) => item !== value
+          ),
     }));
   };
 
@@ -67,11 +70,13 @@ const FilterModal = ({
           {Object.keys(filterCategories).map((category) => (
             <Button
               key={category}
-              variant={selectedCategory === category ? "primary" : "light"}
+              variant={selectedCategory === category ? 'primary' : 'light'}
               className={`w-100 mb-2 text-capitalize ${selectedCategory === category ? classes.activeButton : ''}`}
-              onClick={() => setSelectedCategory(category as keyof FilterCategories)}
+              onClick={() =>
+                setSelectedCategory(category as keyof FilterCategories)
+              }
             >
-              {category.replace(/([A-Z])/g, " $1")}
+              {category.replace(/([A-Z])/g, ' $1')}
             </Button>
           ))}
         </div>
@@ -79,7 +84,7 @@ const FilterModal = ({
           <Form>
             <Form.Group>
               <Form.Label className="text-capitalize fw-bold">
-                {selectedCategory.replace(/([A-Z])/g, " $1")}
+                {selectedCategory.replace(/([A-Z])/g, ' $1')}
               </Form.Label>
               <div className={classes.optionsContainer}>
                 {filterCategories[selectedCategory].map((option: string) => (
@@ -98,7 +103,11 @@ const FilterModal = ({
             </Form.Group>
           </Form>
           <div className={classes.clearButtonContainer}>
-            <Button variant="outline-secondary" onClick={clearFilters} className="w-100">
+            <Button
+              variant="outline-secondary"
+              onClick={clearFilters}
+              className="w-100"
+            >
               Clear Filters
             </Button>
           </div>

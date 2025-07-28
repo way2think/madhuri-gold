@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { Container, Row, Col } from "react-bootstrap";
-import Image from "next/image";
-import { Phone, Mail, MapPin } from "lucide-react";
-import classes from "./ContactUsSection.module.css"; // Adjust the path as necessary
+import { Container, Row, Col } from 'react-bootstrap';
+import Image from 'next/image';
+import { Phone, Mail, MapPin } from 'lucide-react';
+import classes from './ContactUsSection.module.css'; // Adjust the path as necessary
 
 const ContactUsSection = () => {
   return (
@@ -73,7 +73,7 @@ const ContactUsSection = () => {
               width={360}
               height={480}
               className="img-fluid rounded"
-              style={{ maxHeight: "480px", objectFit: "contain" }}
+              style={{ maxHeight: '480px', objectFit: 'contain' }}
             />
           </Col>
         </Row>

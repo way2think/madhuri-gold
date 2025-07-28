@@ -1,22 +1,22 @@
 // components/TrendingSection.tsx
-"use client";
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import TrendingCard from "./TrendingCard";
-import classes from "./TrendingCard.module.css"
+'use client';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import TrendingCard from './TrendingCard';
+import classes from './TrendingCard.module.css';
 
 const trendingItems = [
   {
-    title: "Auspicious Occasion",
-    image: "/assets/images/ear rings.svg",
+    title: 'Auspicious Occasion',
+    image: '/assets/images/ear rings.svg',
   },
   {
-    title: "Gifted Jewellery",
-    image: "/assets/images/box neckleace.svg",
+    title: 'Gifted Jewellery',
+    image: '/assets/images/box neckleace.svg',
   },
   {
-    title: "18Kt Jewellery",
-    image: "/assets/images/blackwomen.svg",
+    title: '18Kt Jewellery',
+    image: '/assets/images/blackwomen.svg',
   },
 ];
 

@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { Container, Row, Col, Button } from "react-bootstrap";
-import { ArrowRight } from "lucide-react";
-import classes from "./JewelrySection.module.css"; // Assuming you have a CSS module for styles
+import Image from 'next/image';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import { ArrowRight } from 'lucide-react';
+import classes from './JewelrySection.module.css'; // Assuming you have a CSS module for styles
 
 const JewelrySection = () => {
   return (
@@ -90,7 +90,7 @@ const JewelrySection = () => {
                 Designer Jewellery
               </h6>
               <a href="">
-                {" "}
+                {' '}
                 <Image
                   src="/assets/images/arrow_outward.svg"
                   alt="Gold Ring"
@@ -103,7 +103,7 @@ const JewelrySection = () => {
             </div>
             <div
               className="position-relative"
-              style={{ width: 200, height: 200, margin: "auto" }}
+              style={{ width: 200, height: 200, margin: 'auto' }}
             >
               <Image
                 src="/assets/images/bangle.svg"
