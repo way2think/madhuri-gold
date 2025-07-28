@@ -105,19 +105,19 @@ export default function Collections() {
             <div className={`${classes.smallImage} col-md-6 d-flex`}>
               <div className="d-flex justify-content-start justify-content-center ms-4 gap-2">
                 <Image
-                  src="/assets/images/mask1.svg"
+                  src="/assets/images/mask1.png"
                   width={40}
                   height={40}
                   alt=""
                 />
                 <Image
-                  src="/assets/images/mask2.svg"
+                  src="/assets/images/mask2.png"
                   width={40}
                   height={40}
                   alt=""
                 />
                 <Image
-                  src="/assets/images/mask3.svg"
+                  src="/assets/images/mask3.png"
                   width={40}
                   height={40}
                   alt=""

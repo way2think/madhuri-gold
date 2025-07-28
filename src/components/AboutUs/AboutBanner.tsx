@@ -26,22 +26,22 @@ const AboutBanner = () => {
               <h3 className={`${classes.aboutUsSubheading}`}>madhuri gold</h3>
               <div className="gap-2 ms-4 d-flex justify-content-space-between">
                 <Image
-                  src="/assets/images/mask1.svg"
+                  src="/assets/images/mask1.png"
                   alt="Gold 1"
                   width={40}
                   height={40}
                   className="rounded-circle"
                 />
                 <Image
-                  src="/assets/images/mask2.svg"
+                  src="/assets/images/mask2.png"
                   alt="Gold 2"
                   width={40}
                   height={40}
                   className="rounded-circle"
                 />
                 <Image
-                  src="/assets/images/Mask3.svg"
-                  alt="Gold 2"
+                  src="/assets/images/mask3.png"
+                  alt="Gold 3"
                   width={40}
                   height={40}
                   className="rounded-circle"

@@ -16,14 +16,14 @@ const JewelrySection = () => {
           >
             <div className="d-flex align-items-center gap-2">
               <Image
-                src="/assets/images/mask1.svg"
+                src="/assets/images/mask1.png"
                 alt="Gold 1"
                 width={40}
                 height={40}
                 className="rounded-circle"
               />
               <Image
-                src="/assets/images/mask2.svg"
+                src="/assets/images/mask2.png"
                 alt="Gold 2"
                 width={40}
                 height={40}
