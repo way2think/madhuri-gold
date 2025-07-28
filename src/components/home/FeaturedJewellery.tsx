@@ -1,11 +1,10 @@
 // components/FeaturedJewellery.tsx
 "use client";
 
-import { Container, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 import classes from "./FeaturedJewellery.module.css";
 
 import "swiper/css";
@@ -13,6 +12,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { featuredProducts } from "@/data/products";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 // const jewelleryItems = [
 //   {
@@ -56,9 +56,14 @@ const FeaturedJewellery = () => {
     <Container className="py-5">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2 className={classes.sectionTitle}>Latest collections</h2>
-        <Button variant="link" className={classes.viewButton}>
+        {/* <Button variant="link" className={classes.viewButton} onClick={() => navigate.push("/collections?sort=latest")}>
           View Collections <ArrowRight size={16} />
-        </Button>
+        </Button> */}
+         <Link href="/collections?sort=latest" className="text-decoration-none">
+          {/* <span className="fw-bold px-3 py-2 border rounded bg-light text-dark d-inline-flex align-items-center"> */}
+            <span className="me-2">View All</span> →
+          {/* </span> */}
+        </Link>
       </div>
 
       <Swiper

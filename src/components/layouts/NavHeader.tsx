@@ -25,17 +25,17 @@ function NavHeader() {
               </Link>
             </Nav.Item>
             <Nav.Item className={classes.navItemmobile}>
-              <Link href="/" className={classes.navItem}>
+              <Link href="/collections?metal=gold" className={classes.navItem}>
                 Gold
               </Link>
             </Nav.Item>
             <Nav.Item className={classes.navItemmobile}>
-              <Link href="/" className={classes.navItem}>
+              <Link href="/collections?metal=diamond" className={classes.navItem}>
                 DIAMOND
               </Link>
             </Nav.Item>
             <Nav.Item className={classes.navItemmobile}>
-              <Link href="/" className={classes.navItem}>
+              <Link href="/collections?metal=silver" className={classes.navItem}>
                 SILVER
               </Link>
             </Nav.Item>

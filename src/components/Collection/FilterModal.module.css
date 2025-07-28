@@ -1,0 +1,57 @@
+.modalRight {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
+  height: 100%;
+  max-width: 400px; /* Reduced width */
+  width: 100%;
+}
+
+.modalContent {
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalBodyContent {
+  padding: 0;
+  display: flex;
+  flex-grow: 1;
+  overflow-y: hidden;
+}
+
+.categoryList {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-right: 1px solid #dee2e6;
+  flex-shrink: 0;
+  width: 150px;
+  overflow-y: auto; /* Enable scrolling */
+}
+
+.optionsPanel {
+  padding: 1rem;
+  flex-grow: 1;
+  overflow-y: auto; /* Enable scrolling */
+  display: flex;
+  flex-direction: column;
+}
+
+.optionsContainer {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.activeButton {
+  background-color: #c17d1f !important; /* Logo color */
+  border-color: #c17d1f !important;
+}
+
+.clearButtonContainer {
+  padding-top: 1rem;
+  border-top: 1px solid #dee2e6;
+  margin-top: auto; /* Pushes the button to the bottom */
+}

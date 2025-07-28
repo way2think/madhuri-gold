@@ -4,8 +4,11 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 // import Image from "next/image";
 import classes from "./GoldBanner.module.css";
+import { useRouter } from "next/navigation";
 
 const GoldBanner = () => {
+  const navigate = useRouter();
+
   return (
     <div className={classes.heroSection}>
       <Container>
@@ -44,7 +47,7 @@ const GoldBanner = () => {
             <h3 className={classes.sparkle}>
               <span className={classes.Infinite}>Infinite</span> Sparkle
             </h3>
-            <Button className={classes.findStoreBtn}>
+            <Button className={classes.findStoreBtn} onClick={() => navigate.push("/collections?metal=gold")}>
               Find Store <span className={classes.arrowIcon}>↗</span>
             </Button>
             <img

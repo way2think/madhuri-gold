@@ -2,15 +2,20 @@
   RewriteEngine On
   RewriteBase /
 
-  # 1️⃣ If requesting an existing file or directory, serve it
+  # 1. If the request is for a file or directory that actually exists on the server, serve it directly.
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # 2️⃣ If a clean URL matches an .html file, rewrite to that
-  RewriteRule ^(.*)/$ $1.html [L]
-  RewriteRule ^(.*)$   $1.html [L]
+  # 2. If the request is for a path that doesn't exist as a file or directory,
+  #    but it's a "clean URL" (e.g., /collections), internally rewrite it to its corresponding directory's index.html.
+  RewriteRule ^([^.]+)$ %{REQUEST_URI}/index.html [L]
 
-  # 3️⃣ Fallback: everything else goes to index.html
-  RewriteRule ^.*$     /index.html [L]
+  # 3. Fallback: If no file, directory, or specific index.html was found,
+  #    and it's not a request for a known file type (like CSS, JS, images),
+  #    then redirect all requests to the root index.html.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !(\.css|\.js|\.png|\.jpg|\.gif|\.svg|\.ico|\.woff|\.woff2|\.ttf|\.eot)$ [NC]
+  RewriteRule ^(.*)$ /index.html [L]
 </IfModule>
