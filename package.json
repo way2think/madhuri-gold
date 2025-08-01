@@ -8,12 +8,15 @@
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write .",
-    "prettier:check": "prettier --check ."
+    "prettier:check": "prettier --check .",
+    "serve": "npx serve@latest out",
+    "postbuild": "next-sitemap && cp send-form.php .htaccess out/ && cd out && zip -r ../../madhurigold-website-build.zip ."
   },
   "dependencies": {
     "bootstrap": "^5.3.7",
     "lucide-react": "^0.525.0",
     "next": "15.3.4",
+    "next-sitemap": "^4.2.3",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.0.0",
