@@ -117,7 +117,8 @@ export default function CollectionSection() {
             </div>
             <div className="col-md-6 d-flex justify-content-center justify-content-center">
               <img
-                src="/assets/images/collection.svg"
+                src="/assets/images/gold/earring-gold6.jpeg"
+                // src="/assets/images/collection.svg"
                 alt="Bride"
                 className={classes.collectionImage}
               />

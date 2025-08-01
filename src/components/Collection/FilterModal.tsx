@@ -26,7 +26,17 @@ interface FilterCategories {
 
 const filterCategories: FilterCategories = {
   metal: ['gold', 'diamond', 'silver'],
-  productType: ['bangles', 'rings', 'bracelets', 'earrings', 'necklace'],
+  productType: [
+    'bangles',
+    'rings',
+    'bracelets',
+    'earrings',
+    'necklace',
+    'mangalsutra',
+    'harams',
+    'vaddanam',
+    'choker',
+  ],
   gender: ['male', 'female', 'unisex'],
   occasion: ['wedding', 'engagement', 'everyday', 'special'],
 };
@@ -96,7 +106,7 @@ const FilterModal = ({
                     value={option}
                     checked={filters[selectedCategory]?.includes(option)}
                     onChange={handleFilterChange}
-                    className="mb-2"
+                    className="mb-2 text-capitalize"
                   />
                 ))}
               </div>
