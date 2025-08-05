@@ -86,9 +86,10 @@ export default function Collections() {
             </div>
             <div className="col-md-6 d-flex justify-content-center justify-content-center">
               <img
-                src="/assets/images/collection.svg"
+                src="/assets/images/model-closeup/model-closeup-collections.jpeg"
+                // src="/assets/images/collection.svg"
                 alt="Bride"
-                className={classes.collectionImage}
+                className={`${classes.collectionImage} img-fluid rounded`}
               />
             </div>
           </div>
@@ -133,7 +134,7 @@ export default function Collections() {
         </Col>
       </Row>
 
-      <Row xs={2} md={4} className="">
+      <Row xs={2} md={4} className="g-4">
         {allProducts.map((item, index) => (
           <Col
             key={index}

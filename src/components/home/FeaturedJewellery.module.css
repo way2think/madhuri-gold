@@ -15,19 +15,42 @@
   gap: 4px;
 }
 
-.card {
+.productCard {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.productCard:hover {
+  transform: scale(1.05);
+}
+
+.productImage {
+  border-radius: 8px;
+}
+
+.cardOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 16px;
   text-align: center;
-  padding: 20px;
-  background: #f1f1f1;
-  border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .cardTitle {
-  margin-top: 12px;
+  margin: 0;
   font-family: 'Palatino Linotype', serif;
-  font-size: 16px;
-  color: #161920;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .custom-pagination {

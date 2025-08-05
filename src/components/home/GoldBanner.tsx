@@ -40,9 +40,10 @@ const GoldBanner = () => {
               />
             </h2>
             <img
-              src="/assets/images/actoressgirl.svg"
+              src="/assets/images/model-closeup/model-closeup-with-bg.jpeg"
+              // src="/assets/images/actoressgirl.svg"
               alt="Bride"
-              className={`${classes.actoressgirl}  img-fluid`}
+              className={`${classes.actoressgirl}  img-fluid rounded`}
             />
             <h3 className={classes.sparkle}>
               <span className={classes.Infinite}>Infinite</span> Sparkle

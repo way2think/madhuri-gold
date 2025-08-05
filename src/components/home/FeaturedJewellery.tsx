@@ -1,7 +1,7 @@
 // components/FeaturedJewellery.tsx
 'use client';
 
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import Image from 'next/image';
@@ -85,9 +85,10 @@ const FeaturedJewellery = () => {
             `<span class="${className} ${classes.customBullet}"></span>`,
         }}
       >
-        {featuredProducts.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div
+        <Row xs={2} md={4} className="g-4">
+          {featuredProducts.map((item, index) => (
+            <SwiperSlide key={index}>
+              {/* <div
               className={classes.card}
               onClick={() => {
                 navigate.push(`/collections/${item.id}`);
@@ -100,9 +101,28 @@ const FeaturedJewellery = () => {
                 height={180}
               />
               <p className={classes.cardTitle}>{item.title}</p>
-            </div>
-          </SwiperSlide>
-        ))}
+            </div> */}
+
+              <div
+                className={classes.productCard}
+                onClick={() => {
+                  navigate.push(`/collections/${item.id}`);
+                }}
+              >
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  layout="fill"
+                  objectFit="cover"
+                  className={classes.productImage}
+                />
+                <div className={classes.cardOverlay}>
+                  <h3 className={classes.cardTitle}>{item.title}</h3>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Row>
       </Swiper>
 
       <div className="d-flex flex-column align-items-center mt-4">

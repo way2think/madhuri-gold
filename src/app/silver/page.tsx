@@ -7,7 +7,8 @@ const SliverPage = () => {
   return (
     <main>
       <JewelrySection
-        bannerImage="/assets/images/silver-model.jpg"
+        bannerImage="/assets/images/model-closeup/silver-model-closeup.png"
+        // bannerImage="/assets/images/silver-model.jpg"
         bannerTextImage="/assets/images/Shine Bright with.svg"
         bannerSecondTextImage="/assets/images/sleek Silver Creations.svg"
       />

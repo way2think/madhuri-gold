@@ -13,7 +13,6 @@ interface JewelrySectionProps {
 
 const JewelrySection: React.FC<JewelrySectionProps> = ({
   bannerImage,
-
   bannerTextImage,
   bannerSecondTextImage,
 }) => {

@@ -7,7 +7,8 @@ const Diamondpage = () => {
   return (
     <main>
       <JewelrySection
-        bannerImage="/assets/images/girls gold.svg"
+        bannerImage="/assets/images/model-closeup/diamond-model-closeup.png"
+        // bannerImage="/assets/images/girls gold.svg"
         bannerTextImage="/assets/images/spark.svg"
       />
       <JewelryColumn products={diamondProducts} subheading="Diamonds" />

@@ -68,9 +68,10 @@ const ContactUsSection = () => {
           {/* Image Section */}
           <Col xs={12} lg={5} className="text-center">
             <Image
-              src="/assets/images/trisha.svg" // Update path if different
+              // src="/assets/images/trisha.svg" // Update path if different
+              src="/assets/images/model-closeup/model-closeup-with-bg.jpeg" // Update path if different
               alt="Bridal Jewelry"
-              width={360}
+              width={300}
               height={480}
               className="img-fluid rounded"
               style={{ maxHeight: '480px', objectFit: 'contain' }}
