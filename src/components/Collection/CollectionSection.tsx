@@ -117,7 +117,8 @@ export default function CollectionSection() {
             </div>
             <div className="col-md-6 d-flex justify-content-center justify-content-center">
               <img
-                src="/assets/images/gold/earring-gold6.jpeg"
+                src="/assets/images/model-closeup/model-closeup1.jpeg"
+                // src="/assets/images/gold/earring-gold6.jpeg"
                 // src="/assets/images/collection.svg"
                 alt="Bride"
                 className={classes.collectionImage}
@@ -128,7 +129,7 @@ export default function CollectionSection() {
 
         <Col md={6} className="text-start mt-3 mt-md-0">
           <h2 className={classes.dare}>
-            Dare to <span className={classes.dazzle}>dazzle</span>
+            Dare to&nbsp;<span className={classes.dazzle}>dazzle</span>
           </h2>
           <div className={`${classes.textContainer} row`}>
             <div className="col-md-6">
@@ -159,7 +160,7 @@ export default function CollectionSection() {
           </div>
 
           <p className={classes.description}>
-            Excellent Quality gold jewelry that are
+            Excellent quality gold jewelery that are
             <br /> strongly recommended for you
           </p>
         </Col>

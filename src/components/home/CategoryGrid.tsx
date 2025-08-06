@@ -22,7 +22,7 @@ const categories: Category[] = [
   {
     id: 'earrings',
     title: 'Earrings',
-    image: '/assets/images/earings gold.svg',
+    image: '/assets/images/gold-earrings.jpeg',
   },
   {
     id: 'bracelets',

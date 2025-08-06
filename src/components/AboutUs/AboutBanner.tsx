@@ -13,11 +13,12 @@ const AboutBanner = () => {
             // src="/assets/images/gold-model.png"
             // src="/assets/images/trisha.svg"
             // src="/assets/images/trisha.jpg"
-            src="/assets/images/model-closeup/diamond-model-closeup.png"
+            // src="/assets/images/model-closeup/model-closeup-with-bg.jpeg"
+            src="/assets/images/model-full/model-full5.jpeg"
             alt="Model 1"
             width={400}
             height={600}
-            className="rounded-md object-cover"
+            className="rounded object-cover"
           />
         </div>
         <div className="col-md-8 col-lg-8">
@@ -54,9 +55,10 @@ const AboutBanner = () => {
           <div className={classes.actressImagesContainer}>
             <img
               // src="/assets/images/diamond-model.jpg"
-              src="/assets/images/model-closeup/gold-model-closeup.png"
+              // src="/assets/images/model-closeup/gold-model-closeup.png"
+              src="/assets/images/model-full/model-full3.jpeg"
               alt="Model 2"
-              className={`${classes.actressImage1} rounded-md object-cover`}
+              className={`${classes.actressImage1} rounded object-cover`}
             />
             {/* <Image
               src="/assets/images/model-closeup/gold-model-closeup.png"
@@ -67,11 +69,12 @@ const AboutBanner = () => {
             /> */}
 
             <img
-              src="/assets/images/model-closeup/silver-model-closeup.png"
               // src="/assets/images/silver-model.png"
               // src="/assets/images/actress3.svg"
+              // src="/assets/images/model-closeup/silver-model-closeup.png"
+              src="/assets/images/model-full/model-full2.jpeg"
               alt="Model 3"
-              className={`${classes.actressImage2} rounded-md object-cover`}
+              className={`${classes.actressImage2} rounded object-cover`}
             />
             {/* <Image
               src="/assets/images/model-closeup/silver-model-closeup.png"
