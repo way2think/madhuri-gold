@@ -4,7 +4,7 @@ import { Container, Row, Col, Card, Image } from 'react-bootstrap';
 import classes from './Collections.module.css'; // Assuming you have a CSS module for styles
 import { allProducts } from '@/data/products';
 import { formatRupees } from '@/util';
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 
 // const items = [
 //   {
@@ -70,7 +70,7 @@ import { useRouter } from 'next/navigation';
 // ];
 
 export default function Collections() {
-  const navigate = useRouter();
+  // const navigate = useRouter();
 
   return (
     <Container className="py-5">
@@ -138,9 +138,9 @@ export default function Collections() {
         {allProducts.map((item, index) => (
           <Col
             key={index}
-            onClick={() => {
-              navigate.push(`/collections/${item.id}`);
-            }}
+            // onClick={() => {
+            //   navigate.push(`/collections/${item.id}`);
+            // }}
           >
             <div className="h-100 row d-flex text-center border cursor-pointer">
               <div className="col-md-6 d-flex align-items-center justify-content-center">

@@ -55,7 +55,7 @@ const FeaturedJewellery = () => {
   return (
     <Container className="py-5">
       <div className="d-flex justify-content-between align-items-center mb-4">
-        <h2 className={classes.sectionTitle}>Latest collections</h2>
+        <h2 className={classes.sectionTitle}>Madhuri Gold Palace</h2>
         {/* <Button variant="link" className={classes.viewButton} onClick={() => navigate.push("/collections?sort=latest")}>
           View Collections <ArrowRight size={16} />
         </Button> */}

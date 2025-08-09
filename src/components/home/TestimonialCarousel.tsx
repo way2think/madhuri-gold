@@ -19,25 +19,25 @@ const testimonials: Testimonial[] = [
   {
     name: 'Ms. Sindhu Kandru',
     message:
-      'We are proud to be a part of all her milestone events both big and small since her childhood. "All my jewellery I buy from vaibhav jewelers only, all are unique pieces. I never found similar jewelers outside"',
+      'We are proud to be a part of all her milestone events both big and small since her childhood. "All my jewellery I buy from Madhuri Gold Palace only, all are unique pieces. I never found similar jewelers outside"',
     image: '/assets/images/sindhu.svg',
   },
   {
     name: 'Ms. Sridevi Adibatla',
     message:
-      'We are proud to be a part of all her milestone events both big and small since her childhood. "All my jewellery I buy from vaibhav jewelers only, all are unique pieces. I never found similar jewelers outside"',
+      'We are proud to be a part of all her milestone events both big and small since her childhood. "All my jewellery I buy from Madhuri Gold Palace only, all are unique pieces. I never found similar jewelers outside"',
     image: '/assets/images/sridevi.svg',
   },
   {
     name: 'Ms. Sindhu Kandru',
     message:
-      'We are proud to be a part of all her milestone events both big and small since her childhood. "All my jewellery I buy from vaibhav jewelers only, all are unique pieces. I never found similar jewelers outside"',
+      'We are proud to be a part of all her milestone events both big and small since her childhood. "All my jewellery I buy from Madhuri Gold Palace only, all are unique pieces. I never found similar jewelers outside"',
     image: '/assets/images/sindhu.svg',
   },
   {
     name: 'Ms. Sridevi Adibatla',
     message:
-      'We are proud to be a part of all her milestone events both big and small since her childhood. "All my jewellery I buy from vaibhav jewelers only, all are unique pieces. I never found similar jewelers outside"',
+      'We are proud to be a part of all her milestone events both big and small since her childhood. "All my jewellery I buy from Madhuri Gold Palace only, all are unique pieces. I never found similar jewelers outside"',
     image: '/assets/images/sridevi.svg',
   },
 ];

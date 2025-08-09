@@ -14,17 +14,16 @@ const PrivacyPolicy = () => {
           </h1>
 
           <p className={classes.shippingpara}>
-            Welcome to https://www.madhurigold-corn.preview-domain.com/. This
-            section explains the Privacy Policy of the
-            https://www.madhurigold-corn.preview-domain.com/ website. We would
+            Welcome to https://madhurigold.com/. This section explains the
+            Privacy Policy of the https://madhurigold.com/ website. We would
             like to state that our privacy policy is subject to change without
             any prior intimation and you shall be required to review the same in
             a regular manner. <br />
             <br />
-            https://www.madhurigold-corn.preview-domain.com/ would not share any
-            personal information like Name, Mobile No, email ID etc of our
-            website user to others. It will be Madhuri Gold Palace first
-            priority to maintain secrecy of the details of our website users.
+            https://madhurigold.com/ would not share any personal information
+            like Name, Mobile No, email ID etc of our website user to others. It
+            will be Madhuri Gold Palace first priority to maintain secrecy of
+            the details of our website users.
           </p>
 
           <h5 className={`fw-bold mb-2 ${classes.shippingheading}`}>
@@ -106,7 +105,7 @@ const PrivacyPolicy = () => {
             terms of this Privacy Policy at any time. <br />
             If you have any questions about this privacy policy, feel free to
             Contact Us through our Website or write to us at
-            https://www.madhurigold-corn.preview-domain.com/
+            https://madhurigold.com/
           </p>
         </Col>
       </Row>

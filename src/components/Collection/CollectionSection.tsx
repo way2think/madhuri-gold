@@ -185,9 +185,9 @@ export default function CollectionSection() {
           {filteredProducts.map((item, index) => (
             <Col
               key={index}
-              onClick={() => {
-                navigate.push(`/collections/${item.id}`);
-              }}
+              // onClick={() => {
+              //   navigate.push(`/collections/${item.id}`);
+              // }}
             >
               <Card
                 className="h-100 text-center border-0 shadow-sm"

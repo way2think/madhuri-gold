@@ -37,12 +37,12 @@ const TermsOfUse = () => {
           </h5>
           <p className={classes.shippingpara}>
             This Website provides access to trading, pricing, news and other
-            information services related to [STORE NAME]. Certain Services
-            available on this Website are for the use of Members only. Please
-            note that some of the terms of these Terms of Use differ for
+            information services related to Madhuri Gold Palace. Certain
+            Services available on this Website are for the use of Members only.
+            Please note that some of the terms of these Terms of Use differ for
             purchases for personal consumption and for investment purposes. This
-            Website offers services for Members who wish to purchase [STORE
-            NAME] for personal consumption, inclusive of customized and
+            Website offers services for Members who wish to purchase Madhuri
+            Gold Palace for personal consumption, inclusive of customized and
             readymade Jewellers. Some items may appear slightly larger or
             smaller than actual size due to screen defaults and photography
             techniques. Sometimes the items may be represented larger than the
@@ -75,19 +75,20 @@ const TermsOfUse = () => {
             information required under the law like Personal Account Number
             (PAN) at the time of purchase if required. Orders are normally
             considered complete only after the payment has been received by
-            [STORE NAME]. To confirm the orders, [STORE NAME] may at random,
-            call up the Members who have placed orders through the Website. We
-            will confirm the order only after the verification. In the event the
-            bank rejects to honour any payment transaction made by a Member
-            towards an order, [STORE NAME] shall have the right to refuse to
-            ship the order to the Member without any liability whatsoever.
+            Madhuri Gold Palace. To confirm the orders, Madhuri Gold Palace may
+            at random, call up the Members who have placed orders through the
+            Website. We will confirm the order only after the verification. In
+            the event the bank rejects to honour any payment transaction made by
+            a Member towards an order, Madhuri Gold Palace shall have the right
+            to refuse to ship the order to the Member without any liability
+            whatsoever.
           </p>
 
           <h5 className={`${classes.shippingheading} fw-bold mt-4 mb-2`}>
             Terms & Conditions of Use of the Website
           </h5>
           <p className={classes.shippingpara}>
-            USING THIS WEBSITE YOU REPRESENT AND WARRANT THAT:You are 18 years
+            USING THIS WEBSITE YOU REPRESENT AND WARRANT THAT: You are 18 years
             of age or older and that your use of the Website and/or Services
             shall not violate any applicable law or regulation. All registration
             information you submit is truthful and accurate and that you agree
@@ -113,9 +114,9 @@ const TermsOfUse = () => {
             profit), or solicit others (including, without limitation,
             solicitations for contributions or donations) or use any public
             forum for commercial purposes of any kind, or (c) use the Website
-            and / or Services in any way that is unlawful, or harms [STORE
-            NAME]. or any other person or entity, as determined in the [STORE
-            NAME]. sole discretion. You will not post, submit, upload,
+            and / or Services in any way that is unlawful, or harms Madhuri Gold
+            Palace. or any other person or entity, as determined in the Madhuri
+            Gold Palace. sole discretion. You will not post, submit, upload,
             distribute, or otherwise transmit or make available any software or
             other computer files that contain a virus or other harmful
             component, or otherwise impair or damage the Website and / or
@@ -128,18 +129,19 @@ const TermsOfUse = () => {
             any content of the Website and/or Services, including but not
             limited to, legal notices, disclaimers or proprietary notices such
             as copyright or trademark symbols, logos, that you do not own or
-            have express permission to modify. [STORE WEBSITE] cannot and will
-            not assure that other users are or will be complying with the
-            foregoing rules or any other provisions of this Terms of Use, and,
-            as between you and [STORE WEBSITE], you hereby assume all risk of
-            harm or injury resulting from any such lack of compliance. All
-            information, content and material contained in the Website and/or
-            Services are [STORE WEBSITE] ‘ copyrighted property. All trademarks,
-            service marks, trade names, and trade dress are proprietary to
-            [STORE WEBSITE]. No information, content or material from the
-            Website and/or Services may be copied, reproduced, republished,
-            uploaded, posted, transmitted or distributed in any way without the
-            [STORE WEBSITE] ‘s express written permission
+            have express permission to modify. https://madhurigold.com cannot
+            and will not assure that other users are or will be complying with
+            the foregoing rules or any other provisions of this Terms of Use,
+            and, as between you and https://madhurigold.com, you hereby assume
+            all risk of harm or injury resulting from any such lack of
+            compliance. All information, content and material contained in the
+            Website and/or Services are https://madhurigold.com ‘ copyrighted
+            property. All trademarks, service marks, trade names, and trade
+            dress are proprietary to https://madhurigold.com. No information,
+            content or material from the Website and/or Services may be copied,
+            reproduced, republished, uploaded, posted, transmitted or
+            distributed in any way without the https://madhurigold.com ‘s
+            express written permission
           </p>
 
           <h5 className={`${classes.shippingpara}  mt-4 mb-2`}>
@@ -147,31 +149,33 @@ const TermsOfUse = () => {
           </h5>
           <p className={classes.shippingpara}>
             The information, content and materials on this website and/or
-            services are provided on an “as is” and “as available” basis. [STORE
-            WEBSITE] and all its affiliates, officers, employees, agents,
-            partners and licensors disclaim all warranties of any kind, either
-            express or implied, including but not limited to, implied warranties
-            on merchantability, fitness for a particular purpose and
-            non-infringement. [STORE WEBSITE] makes all reasonable efforts to
-            display the products listed for sale on its website(s) as accurately
-            as possible. However, [STORE WEBSITE] cannot guarantee that your
-            monitor’s display of any product colour, texture or detail will be
-            accurate. [STORE WEBSITE] does not warrant that product description
-            or other content are accurate, complete, reliable current or
-            error-free. While [STORE WEBSITE] makes every effort to ensure that
-            the products are described and priced accurately, in the event that
-            an item is deemed to be priced incorrectly, [STORE WEBSITE] reserves
-            the right to refuse the sale of that item
+            services are provided on an “as is” and “as available” basis.
+            https://madhurigold.com and all its affiliates, officers, employees,
+            agents, partners and licensors disclaim all warranties of any kind,
+            either express or implied, including but not limited to, implied
+            warranties on merchantability, fitness for a particular purpose and
+            non-infringement. https://madhurigold.com makes all reasonable
+            efforts to display the products listed for sale on its website(s) as
+            accurately as possible. However, https://madhurigold.com cannot
+            guarantee that your monitor’s display of any product colour, texture
+            or detail will be accurate. https://madhurigold.com does not warrant
+            that product description or other content are accurate, complete,
+            reliable current or error-free. While https://madhurigold.com makes
+            every effort to ensure that the products are described and priced
+            accurately, in the event that an item is deemed to be priced
+            incorrectly, https://madhurigold.com reserves the right to refuse
+            the sale of that item
           </p>
 
           <p className={classes.shippingpara}>
-            [STORE WEBSITE] does not warrant that the functions contained in
-            content, information and materials on the website and / or services,
-            including, without limitation any third party sites or services
-            linked to the website and/or services will be uninterrupted, timely
-            or error-free, that the defects will be rectified, or that the
-            website or the servers that make such content, information and
-            materials available are free of viruses or other harmful components.
+            https://madhurigold.com does not warrant that the functions
+            contained in content, information and materials on the website and /
+            or services, including, without limitation any third party sites or
+            services linked to the website and/or services will be
+            uninterrupted, timely or error-free, that the defects will be
+            rectified, or that the website or the servers that make such
+            content, information and materials available are free of viruses or
+            other harmful components.
           </p>
 
           <p className={classes.shippingpara}>
@@ -179,13 +183,14 @@ const TermsOfUse = () => {
             and/or services are accessed at your own risk, and you will be
             solely responsible for any damage or loss of data that results from
             such download to your computer system. You hereby indemnify, defend,
-            and hold [STORE WEBSITE], [STORE WEBSITE] ‘s distributors, agents,
-            representatives and other authorized users, and each of the
-            foregoing entities’ respective resellers, distributors, service
-            providers and suppliers, and all of the foregoing entities’
-            respective officers, directors, owners, employees, agents,
-            representatives, harmless from and against any and all losses,
-            damages, liabilities and costs arising from your use of the website.
+            and hold https://madhurigold.com, https://madhurigold.com‘s
+            distributors, agents, representatives and other authorized users,
+            and each of the foregoing entities’ respective resellers,
+            distributors, service providers and suppliers, and all of the
+            foregoing entities’ respective officers, directors, owners,
+            employees, agents, representatives, harmless from and against any
+            and all losses, damages, liabilities and costs arising from your use
+            of the website.
           </p>
 
           <p className={classes.shippingpara}>
@@ -206,7 +211,7 @@ const TermsOfUse = () => {
           </p>
 
           <p className={classes.shippingpara}>
-            [STORE WEBSITE] or any of the foregoing entities’ respective
+            https://madhurigold.com or any of the foregoing entities’ respective
             resellers, distributors, service providers and suppliers be relieved
             of all its responsibilities, if any, in the event of failure of
             performance resulting directly or indirectly from an act of force
@@ -266,17 +271,18 @@ const TermsOfUse = () => {
           <p className={classes.shippingpara}>
             In the event of a breach of the terms and conditions of this terms
             of use by the user, the user shall be promptly liable to indemnify
-            [STORE WEBSITE]for all the costs, losses and damages caused to
-            [STORE WEBSITE] as a result of such a breach. Further, in the event
-            of your breach of this terms of use, you agree that [STORE WEBSITE]
-            will be irreparably harmed and will not have an adequate remedy in
-            money or damages. [STORE WEBSITE], therefore, shall be entitled in
-            such event to obtain an injunction against such a breach from any
-            court of competent jurisdiction immediately upon request. [STORE
-            WEBSITE]’s right to obtain such relief shall not limit its right to
-            obtain other remedies. Any failure of [STORE WEBSITE] to exercise or
-            enforce any right or provision of these terms of use shall not
-            operate as a waiver of such right or provision.
+            https://madhurigold.comfor all the costs, losses and damages caused
+            to https://madhurigold.com as a result of such a breach. Further, in
+            the event of your breach of this terms of use, you agree that
+            https://madhurigold.com will be irreparably harmed and will not have
+            an adequate remedy in money or damages. https://madhurigold.com,
+            therefore, shall be entitled in such event to obtain an injunction
+            against such a breach from any court of competent jurisdiction
+            immediately upon request. https://madhurigold.com’s right to obtain
+            such relief shall not limit its right to obtain other remedies. Any
+            failure of https://madhurigold.com to exercise or enforce any right
+            or provision of these terms of use shall not operate as a waiver of
+            such right or provision.
           </p>
           <p className={classes.shippingpara}>
             I HAVE READ THE TERMS OF USE AND AGREE TO ALL OF THE PROVISIONS
