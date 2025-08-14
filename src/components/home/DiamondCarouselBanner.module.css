@@ -214,11 +214,9 @@
 }
 
 .diamondmodalimage {
-  width: 100%; /* Or use a specific px/rem value like 300px */
-  height: auto; /* Maintains aspect ratio */
-  max-width: 400px; /* Limits the width */
-  max-height: 450px; /* Limits the height */
-  object-fit: cover; /* Optional: cover, contain, fill */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Tablet screens (max-width: 992px) */
@@ -310,12 +308,11 @@
     width: 5px;
     height: 5px;
   }
-  .diamondmodalimage {
-    max-width: 60%;
+  
   }
-  .overallimage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
+.overallimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -54,7 +54,8 @@ const DiamondCarouselBanner: React.FC = () => {
             <div className="col-md-4">
               <div className={`${classes.overallimage} relative w-full h-full`}>
                 <Image
-                  src="/assets/images/model-closeup/diamond-model-closeup.png" // Ensure this image is in public/
+                  src="/assets/images/model-closeup/slider1.png" // Ensure this image is in public/
+                  // src="/assets/images/model-closeup/diamond-model-closeup.png" // Ensure this image is in public/
                   alt="Diamond Model"
                   width={0} // set width/height to 0 if you're controlling with CSS
                   height={0}
@@ -90,7 +91,8 @@ const DiamondCarouselBanner: React.FC = () => {
             <div className="col-md-4">
               <div className={`${classes.overallimage} relative w-full h-full`}>
                 <Image
-                  src="/assets/images/model-closeup/gold-model-closeup.png" // Ensure this image is in public/
+                  src="/assets/images/model-closeup/slider2.png" // Ensure this image is in public/
+                  // src="/assets/images/model-closeup/gold-model-closeup.png" // Ensure this image is in public/
                   // src="/assets/images/trishapng.png" // Ensure this image is in public/
                   alt="Diamond Model"
                   width={0} // set width/height to 0 if you're controlling with CSS
@@ -129,7 +131,8 @@ const DiamondCarouselBanner: React.FC = () => {
             <div className="col-md-4">
               <div className={`${classes.overallimage} relative w-full h-full`}>
                 <Image
-                  src="/assets/images/model-closeup/silver-model-closeup.png" // Ensure this image is in public/
+                  src="/assets/images/model-closeup/slider3.png" // Ensure this image is in public/
+                  // src="/assets/images/model-closeup/silver-model-closeup.png" // Ensure this image is in public/
                   // src="/assets/images/trishapng.png" // Ensure this image is in public/
                   alt="Diamond Model"
                   width={0} // set width/height to 0 if you're controlling with CSS
